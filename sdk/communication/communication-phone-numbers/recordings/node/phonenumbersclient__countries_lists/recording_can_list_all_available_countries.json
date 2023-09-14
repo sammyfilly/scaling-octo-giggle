@@ -1,0 +1,72 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://endpoint/availablePhoneNumbers/countries?skip=0\u0026maxPageSize=100\u0026api-version=2022-12-02-preview2",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "User-Agent": "azsdk-js-communication-phone-numbers/1.2.0-beta.5 core-rest-pipeline/1.10.3 Node/v18.13.0 OS/(x64-Linux-5.15.90.1-microsoft-standard-WSL2)",
+        "x-ms-client-request-id": "sanitized",
+        "x-ms-content-sha256": "47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=",
+        "x-ms-date": "Tue, 07 Mar 2023 17:25:15 GMT"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Accept-Ranges": "bytes",
+        "api-supported-versions": "2022-12-01, 2022-12-02-preview2",
+        "Cache-Control": "max-age=21600, private, stale-while-revalidate=86400",
+        "Connection": "keep-alive",
+        "Content-Length": "420",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 07 Mar 2023 17:25:21 GMT",
+        "MS-CV": "RsQCYLIgD0GOKxvknhV/OA.0",
+        "Strict-Transport-Security": "max-age=2592000",
+        "x-azure-ref": "20230307T172516Z-z5cms656rd7517rtuf6fdvycec0000000a4g000000009hb0",
+        "X-Cache": "CONFIG_NOCACHE",
+        "X-Processing-Time": "4271ms"
+      },
+      "ResponseBody": {
+        "countries": [
+          {
+            "localizedName": "Canada",
+            "countryCode": "CA"
+          },
+          {
+            "localizedName": "Denmark",
+            "countryCode": "DK"
+          },
+          {
+            "localizedName": "Ireland",
+            "countryCode": "IE"
+          },
+          {
+            "localizedName": "Italy",
+            "countryCode": "IT"
+          },
+          {
+            "localizedName": "Puerto Rico",
+            "countryCode": "PR"
+          },
+          {
+            "localizedName": "Sweden",
+            "countryCode": "SE"
+          },
+          {
+            "localizedName": "United Kingdom",
+            "countryCode": "GB"
+          },
+          {
+            "localizedName": "United States",
+            "countryCode": "US"
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  ],
+  "Variables": {}
+}
