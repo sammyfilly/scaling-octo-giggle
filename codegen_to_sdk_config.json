@@ -1,0 +1,55 @@
+{
+    "tasks": [
+        {
+            "name": "GenerateCode",
+            "script": "bash",
+            "path": "eng/scripts/generate_code.sh",
+            "resultParseCriterion": {
+                "stderr": {
+                    "prefix": {
+                        "FATAL": 1,
+                        "Exception": 3,
+                        "Error": 1
+                    },
+                    "ignore": [
+                        "[WARNING]"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Build",
+            "script": "bash",
+            "path": "eng/scripts/build.sh",
+            "resultParseCriterion": {
+                "stderr": {
+                    "prefix": {
+                        "FATAL": 1,
+                        "Exception": 3,
+                        "Error": 1
+                    },
+                    "ignore": [
+                        "[WARNING]"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "MockTest",
+            "script": "bash",
+            "path": "eng/scripts/runMockTest.sh",
+            "resultParseCriterion": {
+                "stderr": {
+                    "perfix":{
+                        "FATAL": 1,
+                        "Exception": 3,
+                        "Error": "1"
+                    }
+                },
+                "apiCoverage": {
+                    "pattern": "Coverage: %*"
+                }
+            }
+        }
+    ]
+}
