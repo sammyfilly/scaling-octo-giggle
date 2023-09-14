@@ -1,0 +1,42 @@
+# NOTE: Please refer to https://aka.ms/azsdk/engsys/ci-yaml before editing this file.
+
+trigger:
+  branches:
+    include:
+      - master
+      - main
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/communication/
+
+pr:
+  branches:
+    include:
+      - master
+      - main
+      - feature/*
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/communication/
+
+extends:
+  template: ../../eng/pipelines/templates/stages/archetype-sdk-client.yml
+  parameters:
+    ServiceDirectory: communication
+    Artifacts:
+      - name: azure-communication-common
+        safeName: azurecommunicationcommon
+      - name: azure-communication-sms
+        safeName: azurecommunicationsms
+      - name: azure-communication-chat
+        safeName: azurecommunicationchat
+      - name: azure-communication-identity
+        safeName: azurecommunicationidentity
+      - name: azure-communication-phone-numbers
+        safeName: azurecommunicationphonenumbers
+      - name: azure-communication-network-traversal
+        safeName: azurecommunicationnetworktraversal
