@@ -1,0 +1,570 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs?api-version=2022-05-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "Content-Length": "336",
+        "Content-Type": "application/json",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "4c03ec81-1d05-4e5c-b75d-ae06c6421fe6",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": {
+        "analysisInput": {
+          "documents": [
+            {
+              "id": "0",
+              "text": "Microsoft moved its headquarters to Bellevue, Washington in January 1979.",
+              "language": "en"
+            },
+            {
+              "id": "1",
+              "text": "Steve Ballmer stepped down as CEO of Microsoft and was succeeded by Satya Nadella.",
+              "language": "en"
+            }
+          ]
+        },
+        "tasks": [
+          {
+            "kind": "EntityLinking",
+            "parameters": {
+              "modelVersion": "latest"
+            }
+          }
+        ]
+      },
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "apim-request-id": "17ba125a-7a03-40e1-8806-cdefe53a8bdd",
+        "Content-Length": "0",
+        "Date": "Sat, 15 Oct 2022 02:26:13 GMT",
+        "operation-location": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "140"
+      },
+      "ResponseBody": null
+    },
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "44c09c34-0922-4d50-a004-371202d312e8",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "apim-request-id": "334ee154-d071-4b9e-8ecc-db627f2487a9",
+        "Content-Length": "283",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 15 Oct 2022 02:26:13 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "6"
+      },
+      "ResponseBody": {
+        "jobId": "1e9b38d6-477c-41e1-86f1-8bc32041058e",
+        "lastUpdatedDateTime": "2022-10-15T02:26:13Z",
+        "createdDateTime": "2022-10-15T02:26:13Z",
+        "expirationDateTime": "2022-10-16T02:26:13Z",
+        "status": "notStarted",
+        "errors": [],
+        "tasks": {
+          "completed": 0,
+          "failed": 0,
+          "inProgress": 1,
+          "total": 1,
+          "items": []
+        }
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "f9bd8b88-ab12-4cf2-9406-db2c611e76cb",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "apim-request-id": "56f2ef34-b165-4ba6-8af6-1e2a940dd440",
+        "Content-Length": "283",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 15 Oct 2022 02:26:13 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "7"
+      },
+      "ResponseBody": {
+        "jobId": "1e9b38d6-477c-41e1-86f1-8bc32041058e",
+        "lastUpdatedDateTime": "2022-10-15T02:26:13Z",
+        "createdDateTime": "2022-10-15T02:26:13Z",
+        "expirationDateTime": "2022-10-16T02:26:13Z",
+        "status": "notStarted",
+        "errors": [],
+        "tasks": {
+          "completed": 0,
+          "failed": 0,
+          "inProgress": 1,
+          "total": 1,
+          "items": []
+        }
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "afab7051-2689-44d6-9ce6-75856e7a4368",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "apim-request-id": "34d283f2-c5da-4a5e-800c-fdda5b2576c8",
+        "Content-Length": "280",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 15 Oct 2022 02:26:15 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "7"
+      },
+      "ResponseBody": {
+        "jobId": "1e9b38d6-477c-41e1-86f1-8bc32041058e",
+        "lastUpdatedDateTime": "2022-10-15T02:26:13Z",
+        "createdDateTime": "2022-10-15T02:26:13Z",
+        "expirationDateTime": "2022-10-16T02:26:13Z",
+        "status": "running",
+        "errors": [],
+        "tasks": {
+          "completed": 0,
+          "failed": 0,
+          "inProgress": 1,
+          "total": 1,
+          "items": []
+        }
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "2dba455f-8e52-4dac-9e52-c603ce437530",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "apim-request-id": "ff7b114e-0046-4cfb-bb4b-e1e6b6d6b1b2",
+        "Content-Length": "2434",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 15 Oct 2022 02:26:17 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "41"
+      },
+      "ResponseBody": {
+        "jobId": "1e9b38d6-477c-41e1-86f1-8bc32041058e",
+        "lastUpdatedDateTime": "2022-10-15T02:26:15Z",
+        "createdDateTime": "2022-10-15T02:26:13Z",
+        "expirationDateTime": "2022-10-16T02:26:13Z",
+        "status": "succeeded",
+        "errors": [],
+        "tasks": {
+          "completed": 1,
+          "failed": 0,
+          "inProgress": 0,
+          "total": 1,
+          "items": [
+            {
+              "kind": "EntityLinkingLROResults",
+              "lastUpdateDateTime": "2022-10-15T02:26:15.8839024Z",
+              "status": "succeeded",
+              "results": {
+                "documents": [
+                  {
+                    "id": "0",
+                    "entities": [
+                      {
+                        "bingId": "a093e9b9-90f5-a3d5-c4b8-5855e1b01f85",
+                        "name": "Microsoft",
+                        "matches": [
+                          {
+                            "text": "Microsoft",
+                            "offset": 0,
+                            "length": 9,
+                            "confidenceScore": 0.39
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Microsoft",
+                        "url": "https://en.wikipedia.org/wiki/Microsoft",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "a2e3a3eb-b83e-42f0-bf19-95b4c4c9d3c0",
+                        "name": "Bellevue, Washington",
+                        "matches": [
+                          {
+                            "text": "Bellevue, Washington",
+                            "offset": 36,
+                            "length": 20,
+                            "confidenceScore": 0.87
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Bellevue, Washington",
+                        "url": "https://en.wikipedia.org/wiki/Bellevue,_Washington",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "19fb6fb4-3c50-f314-30e4-7b5470e08274",
+                        "name": "Briann January",
+                        "matches": [
+                          {
+                            "text": "January",
+                            "offset": 60,
+                            "length": 7,
+                            "confidenceScore": 0.14
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Briann January",
+                        "url": "https://en.wikipedia.org/wiki/Briann_January",
+                        "dataSource": "Wikipedia"
+                      }
+                    ],
+                    "warnings": []
+                  },
+                  {
+                    "id": "1",
+                    "entities": [
+                      {
+                        "bingId": "56ff0719-4791-406b-99de-0e99c3e8cefc",
+                        "name": "Steve Ballmer",
+                        "matches": [
+                          {
+                            "text": "Steve Ballmer",
+                            "offset": 0,
+                            "length": 13,
+                            "confidenceScore": 0.92
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Steve Ballmer",
+                        "url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "cf5db860-9fd2-390d-0b6d-5ba856efed49",
+                        "name": "Chief executive officer",
+                        "matches": [
+                          {
+                            "text": "CEO",
+                            "offset": 30,
+                            "length": 3,
+                            "confidenceScore": 0.25
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Chief executive officer",
+                        "url": "https://en.wikipedia.org/wiki/Chief_executive_officer",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "a093e9b9-90f5-a3d5-c4b8-5855e1b01f85",
+                        "name": "Microsoft",
+                        "matches": [
+                          {
+                            "text": "Microsoft",
+                            "offset": 37,
+                            "length": 9,
+                            "confidenceScore": 0.36
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Microsoft",
+                        "url": "https://en.wikipedia.org/wiki/Microsoft",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "e23e51ed-d16f-4800-9a31-ed056168b9a2",
+                        "name": "Satya Nadella",
+                        "matches": [
+                          {
+                            "text": "Satya Nadella",
+                            "offset": 68,
+                            "length": 13,
+                            "confidenceScore": 0.9
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Satya Nadella",
+                        "url": "https://en.wikipedia.org/wiki/Satya_Nadella",
+                        "dataSource": "Wikipedia"
+                      }
+                    ],
+                    "warnings": []
+                  }
+                ],
+                "errors": [],
+                "modelVersion": "2021-06-01"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/language/analyze-text/jobs/1e9b38d6-477c-41e1-86f1-8bc32041058e?api-version=2022-05-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en-US",
+        "Connection": "keep-alive",
+        "ocp-apim-subscription-key": "api_key",
+        "Referer": "http://localhost:9876/",
+        "sec-ch-ua": "",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-site",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5058.0 Safari/537.36",
+        "x-ms-client-request-id": "ed585888-a3aa-41c3-adff-91125061c35a",
+        "x-ms-useragent": "azsdk-js-ai-language-text/1.0.1 core-rest-pipeline/1.9.3 OS/Linuxx86_64"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "apim-request-id": "463dd216-5e1c-4c6d-8b86-44b7ab9b1e21",
+        "Content-Length": "2434",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 15 Oct 2022 02:26:17 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "35"
+      },
+      "ResponseBody": {
+        "jobId": "1e9b38d6-477c-41e1-86f1-8bc32041058e",
+        "lastUpdatedDateTime": "2022-10-15T02:26:15Z",
+        "createdDateTime": "2022-10-15T02:26:13Z",
+        "expirationDateTime": "2022-10-16T02:26:13Z",
+        "status": "succeeded",
+        "errors": [],
+        "tasks": {
+          "completed": 1,
+          "failed": 0,
+          "inProgress": 0,
+          "total": 1,
+          "items": [
+            {
+              "kind": "EntityLinkingLROResults",
+              "lastUpdateDateTime": "2022-10-15T02:26:15.8839024Z",
+              "status": "succeeded",
+              "results": {
+                "documents": [
+                  {
+                    "id": "0",
+                    "entities": [
+                      {
+                        "bingId": "a093e9b9-90f5-a3d5-c4b8-5855e1b01f85",
+                        "name": "Microsoft",
+                        "matches": [
+                          {
+                            "text": "Microsoft",
+                            "offset": 0,
+                            "length": 9,
+                            "confidenceScore": 0.39
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Microsoft",
+                        "url": "https://en.wikipedia.org/wiki/Microsoft",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "a2e3a3eb-b83e-42f0-bf19-95b4c4c9d3c0",
+                        "name": "Bellevue, Washington",
+                        "matches": [
+                          {
+                            "text": "Bellevue, Washington",
+                            "offset": 36,
+                            "length": 20,
+                            "confidenceScore": 0.87
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Bellevue, Washington",
+                        "url": "https://en.wikipedia.org/wiki/Bellevue,_Washington",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "19fb6fb4-3c50-f314-30e4-7b5470e08274",
+                        "name": "Briann January",
+                        "matches": [
+                          {
+                            "text": "January",
+                            "offset": 60,
+                            "length": 7,
+                            "confidenceScore": 0.14
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Briann January",
+                        "url": "https://en.wikipedia.org/wiki/Briann_January",
+                        "dataSource": "Wikipedia"
+                      }
+                    ],
+                    "warnings": []
+                  },
+                  {
+                    "id": "1",
+                    "entities": [
+                      {
+                        "bingId": "56ff0719-4791-406b-99de-0e99c3e8cefc",
+                        "name": "Steve Ballmer",
+                        "matches": [
+                          {
+                            "text": "Steve Ballmer",
+                            "offset": 0,
+                            "length": 13,
+                            "confidenceScore": 0.92
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Steve Ballmer",
+                        "url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "cf5db860-9fd2-390d-0b6d-5ba856efed49",
+                        "name": "Chief executive officer",
+                        "matches": [
+                          {
+                            "text": "CEO",
+                            "offset": 30,
+                            "length": 3,
+                            "confidenceScore": 0.25
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Chief executive officer",
+                        "url": "https://en.wikipedia.org/wiki/Chief_executive_officer",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "a093e9b9-90f5-a3d5-c4b8-5855e1b01f85",
+                        "name": "Microsoft",
+                        "matches": [
+                          {
+                            "text": "Microsoft",
+                            "offset": 37,
+                            "length": 9,
+                            "confidenceScore": 0.36
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Microsoft",
+                        "url": "https://en.wikipedia.org/wiki/Microsoft",
+                        "dataSource": "Wikipedia"
+                      },
+                      {
+                        "bingId": "e23e51ed-d16f-4800-9a31-ed056168b9a2",
+                        "name": "Satya Nadella",
+                        "matches": [
+                          {
+                            "text": "Satya Nadella",
+                            "offset": 68,
+                            "length": 13,
+                            "confidenceScore": 0.9
+                          }
+                        ],
+                        "language": "en",
+                        "id": "Satya Nadella",
+                        "url": "https://en.wikipedia.org/wiki/Satya_Nadella",
+                        "dataSource": "Wikipedia"
+                      }
+                    ],
+                    "warnings": []
+                  }
+                ],
+                "errors": [],
+                "modelVersion": "2021-06-01"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Variables": {}
+}
