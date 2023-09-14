@@ -1,0 +1,37 @@
+# NOTE: Please refer to https://aka.ms/azsdk/engsys/ci-yaml before editing this file.
+
+trigger:
+  branches:
+    include:
+      - main
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/test-utils/
+
+pr:
+  branches:
+    include:
+      - main
+      - feature/*
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/test-utils/
+
+extends:
+  template: ../../eng/pipelines/templates/stages/archetype-sdk-client.yml
+  parameters:
+    ServiceDirectory: test-utils
+    IncludeRelease: false
+    Artifacts:
+      - name: azure-tools-test-recorder
+        safeName: azuretoolstestrecorder
+      - name: azure-test-utils-perf
+        safeName: azuretestutilsperf
+      - name: azure-tools-test-credential
+        safeName: azuretoolstestcredential
+      - name: azure-test-utils
+        safeName: azuretestutils
