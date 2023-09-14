@@ -1,0 +1,79 @@
+{
+ "recordings": [
+  {
+   "method": "DELETE",
+   "url": "https://AZURE_DIGITALTWINS_URL.api.wus2.digitaltwins.azure.net/digitaltwins/digitalTwin164874844464100562",
+   "query": {
+    "api-version": "2021-06-30-preview"
+   },
+   "requestBody": null,
+   "status": 404,
+   "response": "{\"error\":{\"code\":\"DigitalTwinNotFound\",\"message\":\"There is no digital twin instance that exists with the ID digitalTwin164874844464100562. Please verify that the twin id is valid and ensure that the twin is not deleted. See section on querying the twins https://aka.ms/adtv2query.\"}}",
+   "responseHeaders": {
+    "content-length": "283",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 31 Mar 2022 17:40:44 GMT",
+    "strict-transport-security": "max-age=2592000",
+    "traceresponse": "00-a6311e7039900840913c9eb1d49b9863-e7cc7703817e034a-01"
+   }
+  },
+  {
+   "method": "PUT",
+   "url": "https://AZURE_DIGITALTWINS_URL.api.wus2.digitaltwins.azure.net/digitaltwins/digitalTwin164874844464100562",
+   "query": {
+    "api-version": "2021-06-30-preview"
+   },
+   "requestBody": "{\"$metadata\":{\"$model\":\"dtmi:samples:DTTestBuilding;2\"},\"AverageTemperature\":68,\"TemperatureUnit\":\"Celsius\"}",
+   "status": 400,
+   "response": "{\"error\":{\"code\":\"ValidationFailed\",\"message\":\"Invalid twin specified\",\"details\":[{\"code\":\"ValidationFailed\",\"message\":\"dtmi:samples:DTTestBuilding;2 or one of its dependencies does not exist.\"}]}}",
+   "responseHeaders": {
+    "content-length": "197",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 31 Mar 2022 17:40:45 GMT",
+    "strict-transport-security": "max-age=2592000",
+    "traceresponse": "00-15c1c480f63c9c48ab43e8eb085bdc76-a0be8800b2119641-01"
+   }
+  },
+  {
+   "method": "DELETE",
+   "url": "https://AZURE_DIGITALTWINS_URL.api.wus2.digitaltwins.azure.net/digitaltwins/digitalTwin164874844464100562",
+   "query": {
+    "api-version": "2021-06-30-preview"
+   },
+   "requestBody": null,
+   "status": 404,
+   "response": "{\"error\":{\"code\":\"DigitalTwinNotFound\",\"message\":\"There is no digital twin instance that exists with the ID digitalTwin164874844464100562. Please verify that the twin id is valid and ensure that the twin is not deleted. See section on querying the twins https://aka.ms/adtv2query.\"}}",
+   "responseHeaders": {
+    "content-length": "283",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 31 Mar 2022 17:40:45 GMT",
+    "strict-transport-security": "max-age=2592000",
+    "traceresponse": "00-dee82b57ebb7c848ae8186b8f8c59d4a-422fa889b5810f4b-01"
+   }
+  },
+  {
+   "method": "DELETE",
+   "url": "https://AZURE_DIGITALTWINS_URL.api.wus2.digitaltwins.azure.net/models/dtmi%3Asamples%3ADTTestBuilding%3B1",
+   "query": {
+    "api-version": "2021-06-30-preview"
+   },
+   "requestBody": null,
+   "status": 404,
+   "response": "{\"error\":{\"code\":\"ModelNotFound\",\"message\":\"There is no Model(s) available that matches the provided id(s) dtmi:samples:DTTestBuilding;1. Check that the Model ID provided is valid by doing a Model_List API call.\"}}",
+   "responseHeaders": {
+    "content-length": "214",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 31 Mar 2022 17:40:45 GMT",
+    "strict-transport-security": "max-age=2592000",
+    "traceresponse": "00-d8c1cb38e67e1643956a95ee90ca2165-f4ddda8676c38347-01"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {
+   "create-digitaltwin-without-model": "digitalTwin164874844464100562"
+  },
+  "newDate": {}
+ },
+ "hash": "66beef09fda94b1e08c9f9ca89db74f0"
+}

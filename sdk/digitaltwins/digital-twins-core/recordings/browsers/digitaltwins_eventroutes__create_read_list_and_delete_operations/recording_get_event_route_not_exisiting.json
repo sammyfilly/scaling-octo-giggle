@@ -1,0 +1,28 @@
+{
+ "recordings": [
+  {
+   "method": "GET",
+   "url": "https://AZURE_DIGITALTWINS_URL.api.wus2.digitaltwins.azure.net/eventroutes/eventRoute164874848445407422",
+   "query": {
+    "api-version": "2021-06-30-preview"
+   },
+   "requestBody": null,
+   "status": 404,
+   "response": "{\"error\":{\"code\":\"EventRouteNotFound\",\"message\":\"There is no route available that matches the provided input. Check for all valid event routes by calling EventRoute_List. See Swagger example (https://aka.ms/RouteSwSmpl).\"}}",
+   "responseHeaders": {
+    "content-length": "223",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 31 Mar 2022 17:41:24 GMT",
+    "strict-transport-security": "max-age=2592000",
+    "traceresponse": "00-8df4bc5e402fd741942bc849222d8251-452ad7c6b974944f-01"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {
+   "get-event-route-not-existing": "eventRoute164874848445407422"
+  },
+  "newDate": {}
+ },
+ "hash": "a6fe3657dbe03ce2c0b291c1b479a847"
+}
