@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "declarationMap": false,
+    "declarationDir": null,
+    "sourceMap": false,
+    "inlineSources": false,
+    "outDir": "samples/typescript/dist"
+  },
+  "include": ["typescript/**/*.ts"],
+  "exclude": ["src/**/*", "test/**/*"]
+}
