@@ -1,0 +1,5 @@
+parameters:
+  EmulatorMsiUrl: "https://aka.ms/cosmosdb-emulator"
+
+steps:
+  - template: /eng/common/pipelines/templates/steps/cosmos-emulator.yml

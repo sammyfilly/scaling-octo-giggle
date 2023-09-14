@@ -1,0 +1,24 @@
+{
+  "extends": "../../../tsconfig.package",
+  "compilerOptions": {
+    "target": "es5",
+    "declarationDir": "./typings/latest",
+    "outDir": "./dist-esm",
+    "lib": ["dom", "es5", "es6", "es7", "esnext"]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+    "./typings/**/*.d.ts",
+    "../storage-internal-avro/node_modules",
+    "../storage-common/node_modules",
+    "./samples/**",
+    "test/perfstress/track-1/"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "../storage-internal-avro/**/*.ts",
+    "../storage-common/**/*.ts"
+  ]
+}
