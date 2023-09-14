@@ -1,0 +1,27 @@
+{
+ "recordings": [
+  {
+   "method": "PATCH",
+   "url": "https://endpoint/metricsadvisor/v1.0/hooks/c5b08742-57f4-4d9d-8327-4c419fb51608",
+   "query": {},
+   "requestBody": "{\"hookType\":\"Email\",\"hookParameter\":{\"toList\":[\"test2@example.com\",\"test3@example.com\"]}}",
+   "status": 200,
+   "response": "{\"hookId\":\"c5b08742-57f4-4d9d-8327-4c419fb51608\",\"hookName\":\"js-test-emailHook-163636470943905369\",\"hookType\":\"Email\",\"externalLink\":\"\",\"description\":\"description\",\"admins\":[\"kaghiya@microsoft.com\"],\"hookParameter\":{\"toList\":[\"test2@example.com\",\"test3@example.com\"]}}",
+   "responseHeaders": {
+    "apim-request-id": "8bfe3637-13cc-4d03-a807-a336c9106360",
+    "content-length": "268",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 08 Nov 2021 09:45:11 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "514",
+    "x-request-id": "8bfe3637-13cc-4d03-a807-a336c9106360"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {},
+  "newDate": {}
+ },
+ "hash": "c93b89937f28444f13594cd397cff72c"
+}
