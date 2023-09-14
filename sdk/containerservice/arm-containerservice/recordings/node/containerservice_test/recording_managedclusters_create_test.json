@@ -1,0 +1,3962 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/myjstest/providers/Microsoft.ContainerService/managedClusters/myreourcexyz?api-version=2022-09-01",
+      "RequestMethod": "PUT",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Length": "359",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6ba18e3f-d0c4-46cf-9742-52c3336ab404"
+      },
+      "RequestBody": {
+        "location": "eastus",
+        "properties": {
+          "dnsPrefix": "aksjssdk",
+          "agentPoolProfiles": [
+            {
+              "count": 1,
+              "vmSize": "Standard_DS2_v2",
+              "maxPods": 110,
+              "osType": "Linux",
+              "maxCount": 100,
+              "minCount": 1,
+              "enableAutoScaling": true,
+              "type": "VirtualMachineScaleSets",
+              "mode": "System",
+              "name": "aksagent"
+            }
+          ],
+          "servicePrincipalProfile": {
+            "clientId": "azure_client_id",
+            "secret": "azure_client_secret"
+          }
+        }
+      },
+      "StatusCode": 201,
+      "ResponseHeaders": {
+        "azure-asyncoperation": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+        "Cache-Control": "no-cache",
+        "Content-Length": "2253",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:47 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c68165ba-94ce-4e85-a479-237781d23a14",
+        "x-ms-ratelimit-remaining-subscription-writes": "1199",
+        "x-ms-request-id": "55512e6d-e770-4563-a8bf-25cdbec8bdf3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062647Z:c68165ba-94ce-4e85-a479-237781d23a14"
+      },
+      "ResponseBody": {
+        "id": "/subscriptions/azure_subscription_id/resourcegroups/myjstest/providers/Microsoft.ContainerService/managedClusters/myreourcexyz",
+        "location": "eastus",
+        "name": "myreourcexyz",
+        "type": "Microsoft.ContainerService/ManagedClusters",
+        "properties": {
+          "provisioningState": "Creating",
+          "powerState": {
+            "code": "Running"
+          },
+          "kubernetesVersion": "1.23.12",
+          "currentKubernetesVersion": "1.23.12",
+          "dnsPrefix": "aksjssdk",
+          "fqdn": "aksjssdk-419066d9.hcp.eastus.azmk8s.io",
+          "azurePortalFQDN": "aksjssdk-419066d9.portal.hcp.eastus.azmk8s.io",
+          "agentPoolProfiles": [
+            {
+              "name": "aksagent",
+              "count": 1,
+              "vmSize": "Standard_DS2_v2",
+              "osDiskSizeGB": 128,
+              "osDiskType": "Managed",
+              "kubeletDiskType": "OS",
+              "maxPods": 110,
+              "type": "VirtualMachineScaleSets",
+              "maxCount": 100,
+              "minCount": 1,
+              "enableAutoScaling": true,
+              "provisioningState": "Creating",
+              "powerState": {
+                "code": "Running"
+              },
+              "orchestratorVersion": "1.23.12",
+              "currentOrchestratorVersion": "1.23.12",
+              "mode": "System",
+              "osType": "Linux",
+              "osSKU": "Ubuntu",
+              "nodeImageVersion": "AKSUbuntu-1804gen2containerd-2022.10.12",
+              "enableFIPS": false
+            }
+          ],
+          "servicePrincipalProfile": {
+            "clientId": "azure_client_id"
+          },
+          "nodeResourceGroup": "MC_myjstest_myreourcexyz_eastus",
+          "enableRBAC": true,
+          "networkProfile": {
+            "networkPlugin": "kubenet",
+            "loadBalancerSku": "standard",
+            "loadBalancerProfile": {
+              "managedOutboundIPs": {
+                "count": 1
+              }
+            },
+            "podCidr": "10.244.0.0/16",
+            "serviceCidr": "10.0.0.0/16",
+            "dnsServiceIP": "10.0.0.10",
+            "dockerBridgeCidr": "172.17.0.1/16",
+            "outboundType": "loadBalancer",
+            "podCidrs": [
+              "10.244.0.0/16"
+            ],
+            "serviceCidrs": [
+              "10.0.0.0/16"
+            ],
+            "ipFamilies": [
+              "IPv4"
+            ]
+          },
+          "maxAgentPools": 100,
+          "securityProfile": {},
+          "storageProfile": {
+            "diskCSIDriver": {
+              "enabled": true
+            },
+            "fileCSIDriver": {
+              "enabled": true
+            },
+            "snapshotController": {
+              "enabled": true
+            }
+          },
+          "oidcIssuerProfile": {
+            "enabled": false
+          }
+        },
+        "sku": {
+          "name": "Basic",
+          "tier": "Free"
+        }
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d7824920-43b4-4f59-8524-531ec86be0bb"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:47 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "93a82165-9d08-4928-91cc-51fff9be8d44",
+        "x-ms-ratelimit-remaining-subscription-reads": "11999",
+        "x-ms-request-id": "1679a874-ca53-4110-afd9-d4e5fd6e6311",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062647Z:93a82165-9d08-4928-91cc-51fff9be8d44"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "629630d4-0dbc-4585-b793-4489eaa19a8f"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:48 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "201e695d-ec8d-417d-9a25-8ec650d9ea53",
+        "x-ms-ratelimit-remaining-subscription-reads": "11998",
+        "x-ms-request-id": "b69e1998-9688-4d3c-9b91-f3405c1932d8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062648Z:201e695d-ec8d-417d-9a25-8ec650d9ea53"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "fa4f1b37-a9d5-4d9e-bfb1-0e7e7fde3a58"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:50 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "52c24d0f-76af-46fa-80ff-1c3898d960ac",
+        "x-ms-ratelimit-remaining-subscription-reads": "11997",
+        "x-ms-request-id": "07d99df9-9a0b-4bd0-8640-994cb2e6dedd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062650Z:52c24d0f-76af-46fa-80ff-1c3898d960ac"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "117620d6-38a0-42b4-b8f7-7a20bd72d1b5"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:52 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "434fbb20-9293-4753-83d4-f24106644d92",
+        "x-ms-ratelimit-remaining-subscription-reads": "11996",
+        "x-ms-request-id": "d93623ad-0357-4c56-ad02-2298bdc62c20",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062653Z:434fbb20-9293-4753-83d4-f24106644d92"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ce85b06e-8862-408d-97dc-b30b77b193b5"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:55 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9a4a9853-9107-4d67-bd0c-7bcb7edbcd1d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11995",
+        "x-ms-request-id": "4dff92c7-1411-4cb0-b93e-a5a196b358df",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062655Z:9a4a9853-9107-4d67-bd0c-7bcb7edbcd1d"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "00542e42-a00d-4069-9cac-49a8c3363d42"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:26:57 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2ab2aaeb-f014-4318-9403-811c6af0ad32",
+        "x-ms-ratelimit-remaining-subscription-reads": "11994",
+        "x-ms-request-id": "23f785a1-5003-438f-8fe1-f12736c9ce8b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062657Z:2ab2aaeb-f014-4318-9403-811c6af0ad32"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "77647c9c-8f7f-4c54-95aa-44f4a5aabbd5"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:00 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2f73ca00-2d7b-4b7e-82dd-85508fed9315",
+        "x-ms-ratelimit-remaining-subscription-reads": "11993",
+        "x-ms-request-id": "a524b5a7-1be9-4f16-a3da-37fc57bac8ea",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062700Z:2f73ca00-2d7b-4b7e-82dd-85508fed9315"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f4d651ff-9c0f-4c5d-8ba1-e0a3abd33887"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:02 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d08fee4a-b74b-4c72-b67e-89a6a7691a58",
+        "x-ms-ratelimit-remaining-subscription-reads": "11992",
+        "x-ms-request-id": "8f8bf953-1ef5-4ed6-b0cd-83fb96e942d5",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062702Z:d08fee4a-b74b-4c72-b67e-89a6a7691a58"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b2fb3d17-b881-4144-8eaf-dd18497eecd0"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:04 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a1f1f179-5742-49fb-b4f8-0b6acf7a67ce",
+        "x-ms-ratelimit-remaining-subscription-reads": "11991",
+        "x-ms-request-id": "54e8a7ec-e99e-4b54-9b4b-61345a53eee8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062704Z:a1f1f179-5742-49fb-b4f8-0b6acf7a67ce"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "bfb0f149-1bd8-4b4d-b1ac-90bf604380a2"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:07 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "db8c05c7-b72d-44eb-bb21-f27d6dbf99c4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11990",
+        "x-ms-request-id": "c32aba14-9f7c-443c-9519-706bf55aed05",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062708Z:db8c05c7-b72d-44eb-bb21-f27d6dbf99c4"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "413cc866-6cbe-4613-a59d-9e48d5c406d8"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:10 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "da257dc3-c236-4033-9064-df253d643e76",
+        "x-ms-ratelimit-remaining-subscription-reads": "11989",
+        "x-ms-request-id": "f7011511-cef8-4287-9fd7-573ab2b56ac3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062710Z:da257dc3-c236-4033-9064-df253d643e76"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d359dc11-e3fd-4719-9ff0-4f493002ce44"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:12 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3f09a491-5b90-486f-833e-2721b3faec30",
+        "x-ms-ratelimit-remaining-subscription-reads": "11988",
+        "x-ms-request-id": "6b67607f-df21-4d24-8894-43873dda5b4d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062713Z:3f09a491-5b90-486f-833e-2721b3faec30"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "67876e11-c36b-436e-aa18-b57ef56b4c4b"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:15 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8a1e55df-3bf3-477f-89da-b9f7fdaaff76",
+        "x-ms-ratelimit-remaining-subscription-reads": "11987",
+        "x-ms-request-id": "ec34c589-1106-4712-b82d-215be7786839",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062715Z:8a1e55df-3bf3-477f-89da-b9f7fdaaff76"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "916524a6-c8b6-4b32-be18-42d591ac374a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:17 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "01f703c3-da6d-47c4-abbb-36dd3692ff15",
+        "x-ms-ratelimit-remaining-subscription-reads": "11986",
+        "x-ms-request-id": "86679cea-4557-4a96-ab85-18d72790c69c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062717Z:01f703c3-da6d-47c4-abbb-36dd3692ff15"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a6a9eb08-9d31-4540-8698-fcb4ea4a7ae5"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:19 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "aacee808-d067-407f-ac7a-02745717d1b7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11985",
+        "x-ms-request-id": "2d6ae974-7105-438e-8f9c-8e41e6111289",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062720Z:aacee808-d067-407f-ac7a-02745717d1b7"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c21b87f3-ebc5-4b91-a25e-a6429c969cb2"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:22 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "dc3ea987-42d7-4daf-86f3-5d1b64b29a7a",
+        "x-ms-ratelimit-remaining-subscription-reads": "11984",
+        "x-ms-request-id": "250256bd-5d7a-480a-a76f-51cd8e3810cf",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062722Z:dc3ea987-42d7-4daf-86f3-5d1b64b29a7a"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b2822398-b923-4964-88d6-5c7feb70fbfc"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:24 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "74888edc-0550-4f75-9f12-998de60ece4d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11983",
+        "x-ms-request-id": "3fbcf02e-a10c-4613-b980-197742083e68",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062724Z:74888edc-0550-4f75-9f12-998de60ece4d"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "9cc6dc2f-0348-4690-bb82-2cdd5dbf6638"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:26 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8030f0fd-6967-458f-a81f-35b3914e89ff",
+        "x-ms-ratelimit-remaining-subscription-reads": "11982",
+        "x-ms-request-id": "f05a8e37-7d42-4842-985d-3faece9f5319",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062727Z:8030f0fd-6967-458f-a81f-35b3914e89ff"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "67445d52-d828-49c6-9cf8-c0f938fbe73b"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:29 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "316c6a88-382c-49ae-9d84-9b7abf47e930",
+        "x-ms-ratelimit-remaining-subscription-reads": "11981",
+        "x-ms-request-id": "69a38be2-180b-48f3-9b7f-68472a5beb29",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062729Z:316c6a88-382c-49ae-9d84-9b7abf47e930"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "5ff39ff4-6fc3-486e-8c5b-21976e30b7bc"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:31 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2294f030-66fe-451d-9eb3-e8d3b3f8d7d5",
+        "x-ms-ratelimit-remaining-subscription-reads": "11980",
+        "x-ms-request-id": "c66c02e9-9b83-465a-9544-3d62f105517e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062731Z:2294f030-66fe-451d-9eb3-e8d3b3f8d7d5"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "137b8b01-d72e-4a8b-971a-73ac83e9bac4"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:33 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "23e9d3fa-42d7-4192-bce0-56abe9f6f56f",
+        "x-ms-ratelimit-remaining-subscription-reads": "11979",
+        "x-ms-request-id": "c1178c41-d767-4813-af7f-5c3c5e9171af",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062734Z:23e9d3fa-42d7-4192-bce0-56abe9f6f56f"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a7bdfd28-da24-4f82-a9cf-fd3270ebc643"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:36 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d96f4409-8552-4c89-8e5a-e07a01063ba2",
+        "x-ms-ratelimit-remaining-subscription-reads": "11978",
+        "x-ms-request-id": "57b92795-5841-4e37-b592-0f6f1b8119f7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062736Z:d96f4409-8552-4c89-8e5a-e07a01063ba2"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "24eca6f4-2981-4220-9411-4cca88951578"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:38 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "ddb10b42-0940-4de5-81bd-4fce730ec190",
+        "x-ms-ratelimit-remaining-subscription-reads": "11977",
+        "x-ms-request-id": "8bd5bf47-511d-4edf-a6f0-02ed94b07ae7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062739Z:ddb10b42-0940-4de5-81bd-4fce730ec190"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "76d2af94-f5fe-4414-aedf-7f4420e2b883"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:40 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "dc643588-8c1f-4c7d-883e-3b3788a3190a",
+        "x-ms-ratelimit-remaining-subscription-reads": "11976",
+        "x-ms-request-id": "afb08dea-e433-4caa-927c-5aa7a01b9b58",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062741Z:dc643588-8c1f-4c7d-883e-3b3788a3190a"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "41c544ed-af6c-4540-898f-1b5c4cfd27b2"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:43 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "06250609-22b0-4544-8b9d-df387f2405f4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11975",
+        "x-ms-request-id": "cbc386b8-e3e0-4230-b002-edf361c9d172",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062743Z:06250609-22b0-4544-8b9d-df387f2405f4"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "590f1867-b82a-431c-acc9-cca3d8d7b855"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:45 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e0a8f97f-0c81-4775-b72c-b26d00dcbfe8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11974",
+        "x-ms-request-id": "20b74522-0eda-43b9-a39d-3ebf515d4904",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062746Z:e0a8f97f-0c81-4775-b72c-b26d00dcbfe8"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6f0c7b37-4666-473d-9185-8214cd48b3a8"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:48 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8943600f-99f6-4368-9601-ce79baefd8b4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11973",
+        "x-ms-request-id": "941a7ebb-6ec2-4271-b9d9-9bc99391c554",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062748Z:8943600f-99f6-4368-9601-ce79baefd8b4"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "64a2339c-ab4d-4311-b412-d45021d8d996"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:50 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9347d2de-5978-461b-8ad5-a9fc5d800b33",
+        "x-ms-ratelimit-remaining-subscription-reads": "11972",
+        "x-ms-request-id": "2c0f7d47-92c6-4291-87c8-251d3a0aee88",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062750Z:9347d2de-5978-461b-8ad5-a9fc5d800b33"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6cc48af8-2bef-43d8-a06e-62382a4a9470"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:52 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b9529c31-8f05-4fed-bdd7-d8e4f09c7df3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11971",
+        "x-ms-request-id": "e8265f99-a65f-4a21-a15d-210ade32f349",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062753Z:b9529c31-8f05-4fed-bdd7-d8e4f09c7df3"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "88e81cc9-838d-426b-ba6c-ede7a1ca9155"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:55 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "11c39a68-3709-45b7-9790-204343943b59",
+        "x-ms-ratelimit-remaining-subscription-reads": "11970",
+        "x-ms-request-id": "0d0c8d2c-cab6-49de-a2be-383abe199a6b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062755Z:11c39a68-3709-45b7-9790-204343943b59"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "2ca55999-5eb0-4011-91dc-893f134b979a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:57 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c2d17338-b0c4-42f3-95b1-7b5c05bc6e66",
+        "x-ms-ratelimit-remaining-subscription-reads": "11969",
+        "x-ms-request-id": "9bb423e4-8536-46b7-a704-a4c6173efe3d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062758Z:c2d17338-b0c4-42f3-95b1-7b5c05bc6e66"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a99cb8e8-5c06-4cb5-8e5c-cfe90b17b47a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:27:59 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c436baa3-e577-4d8e-8614-77aa1be44d80",
+        "x-ms-ratelimit-remaining-subscription-reads": "11968",
+        "x-ms-request-id": "87eb9114-be70-46f7-b896-a57b24f5f371",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062800Z:c436baa3-e577-4d8e-8614-77aa1be44d80"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "dd205405-3299-4e05-aa4d-96c77030e6b8"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:02 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f18edcea-600f-4612-a363-afd98539c722",
+        "x-ms-ratelimit-remaining-subscription-reads": "11967",
+        "x-ms-request-id": "342e283c-08eb-4e1f-94eb-ea520a2ce254",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062802Z:f18edcea-600f-4612-a363-afd98539c722"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "91eb04c8-d8e1-497e-aaeb-a2f91aa04e3f"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:04 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6b96d32b-fcf0-4a6a-affb-8354ea8a7a21",
+        "x-ms-ratelimit-remaining-subscription-reads": "11966",
+        "x-ms-request-id": "a0eb946d-85cc-4ed9-a65d-61cc1a13ad43",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062805Z:6b96d32b-fcf0-4a6a-affb-8354ea8a7a21"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "62a9fd0f-f517-42f2-a5ac-0b137454cc09"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:06 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8a742bff-e1c0-4871-b5d3-fb99afd1d32c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11965",
+        "x-ms-request-id": "9d147d98-90bd-4965-8623-c9f891184091",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062807Z:8a742bff-e1c0-4871-b5d3-fb99afd1d32c"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "021c8bd0-def5-4c50-9ffa-c55581769c9c"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:09 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1a131586-5444-494f-9d40-eabb30297323",
+        "x-ms-ratelimit-remaining-subscription-reads": "11964",
+        "x-ms-request-id": "0f9ff59f-4a21-47fb-a63e-b8843ee6abe3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062809Z:1a131586-5444-494f-9d40-eabb30297323"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7cbab45d-aed4-461b-a9c7-6564994c73f7"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:11 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6b112560-ab9e-43f1-856c-d4d20de36706",
+        "x-ms-ratelimit-remaining-subscription-reads": "11963",
+        "x-ms-request-id": "7a7de7fd-e11d-4863-8145-c0843b5c12f8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062812Z:6b112560-ab9e-43f1-856c-d4d20de36706"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "bc8bd32e-e0e5-4b58-b851-bb546aafe9ad"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:13 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9179b93b-37e9-490c-a9b6-6113f38c0510",
+        "x-ms-ratelimit-remaining-subscription-reads": "11962",
+        "x-ms-request-id": "cdca6eb2-85a5-48d8-8b98-106647e22308",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062814Z:9179b93b-37e9-490c-a9b6-6113f38c0510"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "5632dc61-d978-41c9-8f38-bcb39b284c07"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:16 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c53d9e1f-174f-4406-b84b-dbfc228c5a20",
+        "x-ms-ratelimit-remaining-subscription-reads": "11961",
+        "x-ms-request-id": "60de074a-15f8-45a7-9e13-071dea2236d1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062817Z:c53d9e1f-174f-4406-b84b-dbfc228c5a20"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "1e43936a-f05e-4d23-94ca-c0c010cd7625"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:18 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "70c3891d-96ad-41e0-bae8-344eff5d536d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11960",
+        "x-ms-request-id": "6aae2bfc-f73e-4d02-9eca-5ffa33d9b695",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062819Z:70c3891d-96ad-41e0-bae8-344eff5d536d"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "df4393b3-54c5-42d2-b9cd-9b4535536cba"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:20 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9938c0a7-f17a-4528-bb07-4a0d8cf2e29f",
+        "x-ms-ratelimit-remaining-subscription-reads": "11959",
+        "x-ms-request-id": "c5275c70-8f3a-4d14-acc2-8924c2769792",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062821Z:9938c0a7-f17a-4528-bb07-4a0d8cf2e29f"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "62d11720-575c-407d-8703-b275f6210e89"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:23 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "fd3eb597-5f31-4497-88d8-67f380737ead",
+        "x-ms-ratelimit-remaining-subscription-reads": "11958",
+        "x-ms-request-id": "30e1a2e6-f0d5-4bff-9d74-6badb03766d6",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062824Z:fd3eb597-5f31-4497-88d8-67f380737ead"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ee0281e9-3e33-4d05-a8b2-91a6742c076d"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:25 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "aa34ce3c-56a3-4ac1-8ddf-dfabb7b38077",
+        "x-ms-ratelimit-remaining-subscription-reads": "11957",
+        "x-ms-request-id": "146e67f9-3037-464b-9216-252d23ebbe71",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062826Z:aa34ce3c-56a3-4ac1-8ddf-dfabb7b38077"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4a32a3ce-dfc6-4421-be8c-0baea7bf8016"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:29 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "ad07a6f8-e772-408a-bc14-ad2cc6041288",
+        "x-ms-ratelimit-remaining-subscription-reads": "11956",
+        "x-ms-request-id": "79f979c4-3d8d-4503-920b-7ab903705c21",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062829Z:ad07a6f8-e772-408a-bc14-ad2cc6041288"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "31e6fbc0-f668-4cdc-b653-c234da290d86"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:31 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "ffb77287-ce2d-4b3b-82a1-34ea7b9aa42b",
+        "x-ms-ratelimit-remaining-subscription-reads": "11955",
+        "x-ms-request-id": "9f910dbd-9f31-4bff-9884-fc39015c8f62",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062831Z:ffb77287-ce2d-4b3b-82a1-34ea7b9aa42b"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "582c9cef-d0f2-4648-8ca6-06889bc0f96c"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:33 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "baa8fe13-51ec-4828-93c1-4e9c332e861d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11954",
+        "x-ms-request-id": "10115be2-8809-4083-9eac-ac7cf40be314",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062833Z:baa8fe13-51ec-4828-93c1-4e9c332e861d"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d087cb48-8e0e-4323-9266-a1f1c4d35d8a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:36 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cea1ae69-6d12-4861-85f0-1d436bff4ff9",
+        "x-ms-ratelimit-remaining-subscription-reads": "11953",
+        "x-ms-request-id": "9f9a60bf-9ce8-4e36-8ffa-9df701e4962b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062836Z:cea1ae69-6d12-4861-85f0-1d436bff4ff9"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b685bdd1-103c-4b5e-8d7d-16b0bb49c840"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:38 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4866822d-0011-4b1f-bdf5-7c8efed0872c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11952",
+        "x-ms-request-id": "8b429fd4-6572-4053-9344-b32995e69641",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062838Z:4866822d-0011-4b1f-bdf5-7c8efed0872c"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "cec24c65-db78-4ddb-84c4-14a9f989d1b2"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:40 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cd6002ef-e782-4445-886e-f0db2e73a560",
+        "x-ms-ratelimit-remaining-subscription-reads": "11951",
+        "x-ms-request-id": "705b4aba-dbe8-491b-a97a-46411e05ee13",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062841Z:cd6002ef-e782-4445-886e-f0db2e73a560"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4803775c-90a2-4238-a09b-96d60205cfff"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:43 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a22ae5d9-733e-40f2-973a-cca33eb03ce0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11950",
+        "x-ms-request-id": "15c94570-ebfc-4aca-8a0e-a6fbac24127b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062843Z:a22ae5d9-733e-40f2-973a-cca33eb03ce0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "cd0829df-67cd-4119-a8ab-2a946c121a4c"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:45 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a0db9dfa-c343-4d85-9c37-13d34d9a9bfc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11949",
+        "x-ms-request-id": "f5449db0-fe94-4068-9eb5-d5434f36dc38",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062845Z:a0db9dfa-c343-4d85-9c37-13d34d9a9bfc"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c1a09238-a984-4916-ac65-e7a4532f3cfc"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:48 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b73e7eb3-ec38-46ec-9c23-b0d0e75ba745",
+        "x-ms-ratelimit-remaining-subscription-reads": "11948",
+        "x-ms-request-id": "bf9b82dc-888a-4c18-948a-715a715ff862",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062848Z:b73e7eb3-ec38-46ec-9c23-b0d0e75ba745"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "774268b1-4e88-4aec-8e90-7e24485d9bd6"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:50 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "bd217af4-72cd-48ed-91fb-9c3bdeeb9f15",
+        "x-ms-ratelimit-remaining-subscription-reads": "11947",
+        "x-ms-request-id": "f98b06f5-c5b4-4e51-82d3-0db06a783a71",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062850Z:bd217af4-72cd-48ed-91fb-9c3bdeeb9f15"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "2100a600-ee3b-4b0b-8563-3cfb5554caaa"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:52 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8592b66a-30f4-4c84-9a61-35ef04fff3a8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11946",
+        "x-ms-request-id": "14c4c476-e4ae-4e24-a897-e26367c67996",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062853Z:8592b66a-30f4-4c84-9a61-35ef04fff3a8"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "dec01cac-26c6-4d51-bad2-f4c5a86fb06a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:55 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "77e3f487-ae8b-496b-b42f-e72938556bf0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11945",
+        "x-ms-request-id": "37d66fc1-6df7-47e7-9a80-6c9029e0702e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062855Z:77e3f487-ae8b-496b-b42f-e72938556bf0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ec08c82c-04e5-475d-90b7-0fdfb019f6b1"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:57 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4353bd4e-0e9b-49eb-8e97-b89bcd68d7b5",
+        "x-ms-ratelimit-remaining-subscription-reads": "11944",
+        "x-ms-request-id": "c3ae088a-484e-4a0a-9dcc-e570a6a8e1a1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062857Z:4353bd4e-0e9b-49eb-8e97-b89bcd68d7b5"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "45c3fd1b-2065-4bed-8e24-b5361aac5f72"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:28:59 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1ddaab24-cfb4-4217-b53c-87717e5fcb5d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11943",
+        "x-ms-request-id": "b7da0234-9ad8-4b21-a1b2-34a7174d8c6f",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062900Z:1ddaab24-cfb4-4217-b53c-87717e5fcb5d"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "186dd20f-e8a8-4198-b72e-b413f4813c01"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:02 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1ef562db-5466-4c0f-8ca5-e047ecd7bfbb",
+        "x-ms-ratelimit-remaining-subscription-reads": "11942",
+        "x-ms-request-id": "73f450f0-7fc2-4585-ac5f-d878f076b41e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062902Z:1ef562db-5466-4c0f-8ca5-e047ecd7bfbb"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "db881309-b1d1-4521-8f4a-86642f486376"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:04 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3dc7b2ec-f82a-4d26-9523-8abdb3c763f0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11941",
+        "x-ms-request-id": "99917f52-2cfb-4448-9221-b48e61bf6b3e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062904Z:3dc7b2ec-f82a-4d26-9523-8abdb3c763f0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "897fa684-0c15-4714-999d-20d12786a926"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:07 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1ba40eed-76c4-4803-825e-5766188898d0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11940",
+        "x-ms-request-id": "4c0d65e1-a79b-4abb-8f10-90fc78d55a4e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062907Z:1ba40eed-76c4-4803-825e-5766188898d0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "9bcee3b1-e508-46d7-a24d-c1efae2c7ed4"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:09 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "0a27b901-a79e-409b-ad71-57ce61d73ef0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11939",
+        "x-ms-request-id": "cf4b9759-b7cd-493a-bcf0-03b25209c8d0",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062909Z:0a27b901-a79e-409b-ad71-57ce61d73ef0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f322c569-976d-4ad2-8b95-61f39abf27ea"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:11 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "53efb359-9952-49f0-ba90-480a783e4dfc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11938",
+        "x-ms-request-id": "26239a50-9a9e-4d34-a34c-4a59a09bbe96",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062912Z:53efb359-9952-49f0-ba90-480a783e4dfc"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d0b2c202-231c-4af7-84f4-4f8cceb5ef85"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:14 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "49eb082b-34ff-4e15-960b-3f2210eb37cc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11937",
+        "x-ms-request-id": "41b3b5ef-bea4-427b-80a6-c67dfbb4fe61",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062914Z:49eb082b-34ff-4e15-960b-3f2210eb37cc"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a5c6a365-afe0-4f11-9fee-214f9a1afde4"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:16 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4396ca22-c435-409e-a437-022b6d45c86b",
+        "x-ms-ratelimit-remaining-subscription-reads": "11936",
+        "x-ms-request-id": "0ef4ea51-88ff-4aa7-8c01-e84f77184829",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062916Z:4396ca22-c435-409e-a437-022b6d45c86b"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "85c68489-c264-467b-ad79-620b302a0108"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:19 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "37bc8047-e46f-4355-825d-8a4f4bb052ec",
+        "x-ms-ratelimit-remaining-subscription-reads": "11935",
+        "x-ms-request-id": "389b5cd3-d497-4707-9d03-28981cecf384",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062919Z:37bc8047-e46f-4355-825d-8a4f4bb052ec"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "472c036b-da51-4480-b039-314791e2141e"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:21 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "84b19aaa-0455-45f1-877c-51df6b01f994",
+        "x-ms-ratelimit-remaining-subscription-reads": "11934",
+        "x-ms-request-id": "0ca24463-35ea-4ebf-a139-24163a6b582f",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062921Z:84b19aaa-0455-45f1-877c-51df6b01f994"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "81307613-75e9-4acb-be84-9594d0f03159"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:23 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3c2ca958-69b6-444e-81b0-f479a52a4fa8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11933",
+        "x-ms-request-id": "35a6c163-6c9c-4b76-8435-d30fd4114dcd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062924Z:3c2ca958-69b6-444e-81b0-f479a52a4fa8"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "faf69d01-6337-43d8-94c5-56b0ec1c68e1"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:26 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "61cad6ac-56ec-48c5-a0b3-178ff3703bb3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11932",
+        "x-ms-request-id": "37913e2e-a9e9-4551-973e-44fb261c6da1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062926Z:61cad6ac-56ec-48c5-a0b3-178ff3703bb3"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "36769d4f-c6b0-41bd-a513-cb6c26c1b927"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:28 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1f55440e-1e61-43c1-88de-e31c943dcb73",
+        "x-ms-ratelimit-remaining-subscription-reads": "11931",
+        "x-ms-request-id": "32cfa9a9-9897-4065-8385-390b5bee36b5",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062928Z:1f55440e-1e61-43c1-88de-e31c943dcb73"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "78b652d8-ab74-4382-925b-13274205152a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:31 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "633c7719-97b8-48b6-a3a6-0bd944d7f5df",
+        "x-ms-ratelimit-remaining-subscription-reads": "11930",
+        "x-ms-request-id": "722105c8-ff1a-461b-a0d1-fdfc70eaf765",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062931Z:633c7719-97b8-48b6-a3a6-0bd944d7f5df"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6327289b-8211-450e-b72f-91cdb8e2d6bd"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:33 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d266de46-31fc-4a2a-9145-22b7e237cb05",
+        "x-ms-ratelimit-remaining-subscription-reads": "11929",
+        "x-ms-request-id": "14e5cf38-5fa9-43a7-8116-e655f0e0d45b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062933Z:d266de46-31fc-4a2a-9145-22b7e237cb05"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b76d9d62-2e48-4792-ae0a-8fb8c0e6ff5a"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:35 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6bbd59ca-fd46-42c5-9a82-a2e88066b5df",
+        "x-ms-ratelimit-remaining-subscription-reads": "11928",
+        "x-ms-request-id": "fc0239c5-bae4-48ba-a6f6-898806c70898",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062936Z:6bbd59ca-fd46-42c5-9a82-a2e88066b5df"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "3d401e75-73d6-4125-8bf7-fea7bfdb8af9"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:38 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "648ee3bd-8f7d-403e-8517-1ab645bc2328",
+        "x-ms-ratelimit-remaining-subscription-reads": "11927",
+        "x-ms-request-id": "7608f550-39a2-4dc7-8550-deef993af199",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062938Z:648ee3bd-8f7d-403e-8517-1ab645bc2328"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "3eb5fac0-7339-47e9-83a3-e99891bdc0b9"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:40 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "04100278-e681-4fb8-89bd-fe87ac2c2950",
+        "x-ms-ratelimit-remaining-subscription-reads": "11926",
+        "x-ms-request-id": "46b2ef24-158a-40b0-823e-aebe96dc1ce5",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062940Z:04100278-e681-4fb8-89bd-fe87ac2c2950"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "00e6c9cb-a47a-4f31-a8df-92b432e48e50"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:42 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "167d5505-4db1-4f63-9a54-9b326fd004a6",
+        "x-ms-ratelimit-remaining-subscription-reads": "11925",
+        "x-ms-request-id": "3af92616-fd87-4ea9-a07d-b30bf7f146a1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062943Z:167d5505-4db1-4f63-9a54-9b326fd004a6"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6c02c7e8-1f92-4350-86fa-cba75e10ef3d"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:45 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cfa13bc6-98df-4bd6-932f-60ce6136a7f1",
+        "x-ms-ratelimit-remaining-subscription-reads": "11924",
+        "x-ms-request-id": "0e0f6c34-7c24-4075-ac89-e11864a1ddfd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062945Z:cfa13bc6-98df-4bd6-932f-60ce6136a7f1"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c57ab2b7-6499-4c41-b8e2-7eae9acc579c"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:47 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4621c945-7bb0-45a4-9d2c-6d7a91fe0900",
+        "x-ms-ratelimit-remaining-subscription-reads": "11923",
+        "x-ms-request-id": "cc1aa65f-9d73-4240-aee1-02b2deee9fcd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062948Z:4621c945-7bb0-45a4-9d2c-6d7a91fe0900"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "aeda3f35-c213-49d2-8661-edc4eb2d20fc"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:49 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "28f490b7-457c-4ee2-bdab-921dd1f2dc33",
+        "x-ms-ratelimit-remaining-subscription-reads": "11922",
+        "x-ms-request-id": "8e7b0e73-44e5-453c-8e97-e64299188ee7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062950Z:28f490b7-457c-4ee2-bdab-921dd1f2dc33"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6c511139-a5f7-4286-bc27-366139b2da1e"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:52 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "75e5b24b-7901-49cb-b0da-ba9bf2489b0e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11921",
+        "x-ms-request-id": "c2605f76-649b-47a5-bf51-dbd1d46b6798",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062952Z:75e5b24b-7901-49cb-b0da-ba9bf2489b0e"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "e8f37fe2-efd0-4561-bd7d-5b3ebaa3f399"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:54 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3275d6d4-f181-4ba2-af37-5d56c969e4d6",
+        "x-ms-ratelimit-remaining-subscription-reads": "11920",
+        "x-ms-request-id": "89a068ab-e25b-4290-b024-16c5a270ba0f",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062955Z:3275d6d4-f181-4ba2-af37-5d56c969e4d6"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "cf2fedc5-27ed-49da-904b-79692709ead4"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:57 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "902c0418-14bd-4af2-acec-c7d9d7460108",
+        "x-ms-ratelimit-remaining-subscription-reads": "11919",
+        "x-ms-request-id": "b7c888fe-8dad-46c1-ae39-93c0906ccb4a",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T062957Z:902c0418-14bd-4af2-acec-c7d9d7460108"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "18318e6b-e1f2-44fb-a2e1-2f2909d6a466"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:29:59 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9fb0f6c1-9c2c-491d-9dfc-b9fd82511b42",
+        "x-ms-ratelimit-remaining-subscription-reads": "11918",
+        "x-ms-request-id": "c2a978b6-133a-4cba-922b-28c7432161ea",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063000Z:9fb0f6c1-9c2c-491d-9dfc-b9fd82511b42"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "50a73730-877b-4f53-8a3f-db4590452f43"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:01 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b0d07665-8bbc-4f8e-b809-5cca9ec64e7c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11917",
+        "x-ms-request-id": "ec487f99-4c7c-4ec8-87cf-16936e4d7e78",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063002Z:b0d07665-8bbc-4f8e-b809-5cca9ec64e7c"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "45a6aff2-748d-47b3-ae88-dfde3b1e6d6f"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:04 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "66c59470-6c6d-4167-baaf-ea9ed27f60c0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11916",
+        "x-ms-request-id": "e0e912dc-0298-475e-9c99-76bbbb680844",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063004Z:66c59470-6c6d-4167-baaf-ea9ed27f60c0"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f21bb27d-82cd-48ea-80e1-690430e47811"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:06 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e77e54c4-2b3a-4b01-be35-54b50ecb81ae",
+        "x-ms-ratelimit-remaining-subscription-reads": "11915",
+        "x-ms-request-id": "7218bb69-8430-41b3-8c14-41d03d27f1cf",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063007Z:e77e54c4-2b3a-4b01-be35-54b50ecb81ae"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "367e0e40-5bae-4120-9c86-18fba759cbf8"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:08 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f33d7c27-12e5-4b38-8ea6-a70d7b14a3a3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11914",
+        "x-ms-request-id": "827ffa53-4b8e-4761-9069-1b4c881b8b4a",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063009Z:f33d7c27-12e5-4b38-8ea6-a70d7b14a3a3"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "58d7e549-2da7-4e08-a76a-847b560f2da2"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:11 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "80192af7-bed5-44a0-a2d5-ca30164fc2bf",
+        "x-ms-ratelimit-remaining-subscription-reads": "11913",
+        "x-ms-request-id": "286df2f8-52af-44c9-ae18-3d68901c30bc",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063011Z:80192af7-bed5-44a0-a2d5-ca30164fc2bf"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "490f9a13-696d-4cfd-9df0-ad84d7b8a8b4"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:13 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "598c5c81-d546-44b7-b19f-176d6951ff6c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11912",
+        "x-ms-request-id": "7f034d68-0fa4-4a4b-9479-1a88d0272d54",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063014Z:598c5c81-d546-44b7-b19f-176d6951ff6c"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "3c45b92b-a6cd-457e-8433-7a8f4aeeba03"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:16 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b5cd74ff-6417-4682-9145-46383d97eade",
+        "x-ms-ratelimit-remaining-subscription-reads": "11911",
+        "x-ms-request-id": "d1154f50-db20-4cf4-8671-902b887559ae",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063016Z:b5cd74ff-6417-4682-9145-46383d97eade"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ca8d634b-4edd-4068-bde0-aadb9570a236"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:18 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "1f699b18-bb7d-4746-b5be-bbd4c6d4d6cf",
+        "x-ms-ratelimit-remaining-subscription-reads": "11910",
+        "x-ms-request-id": "0709d2bb-3196-4fa3-865f-02964e79e056",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063019Z:1f699b18-bb7d-4746-b5be-bbd4c6d4d6cf"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "fad3c28e-5822-455e-89d2-5be37761ded6"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:20 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "46e1316c-4a71-4fb3-b4f7-e64ef528a920",
+        "x-ms-ratelimit-remaining-subscription-reads": "11909",
+        "x-ms-request-id": "e972e0d5-94be-4466-b8f7-9f0620f0c994",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063021Z:46e1316c-4a71-4fb3-b4f7-e64ef528a920"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c7bae974-fead-44e1-a25e-ebe3f9200fdb"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:23 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "fe3181df-04a2-4abf-9362-eebb466bee56",
+        "x-ms-ratelimit-remaining-subscription-reads": "11908",
+        "x-ms-request-id": "ac23b925-a462-409e-ae55-a87d88420aa1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063023Z:fe3181df-04a2-4abf-9362-eebb466bee56"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "38349d1a-c112-421b-b9d8-61041f59874f"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:25 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e6d80972-1f47-4202-8e44-b0f5e6297125",
+        "x-ms-ratelimit-remaining-subscription-reads": "11907",
+        "x-ms-request-id": "20de74e4-035a-42e2-aa53-427d844f53c7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063026Z:e6d80972-1f47-4202-8e44-b0f5e6297125"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b4e6c0ea-cc03-4b61-afb0-0e25f5a83e55"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:28 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "0b79bce4-d44a-42fc-b566-e16baf090af2",
+        "x-ms-ratelimit-remaining-subscription-reads": "11906",
+        "x-ms-request-id": "3acf8941-1fec-41e8-b958-11146ea14579",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063028Z:0b79bce4-d44a-42fc-b566-e16baf090af2"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "8c4c3d3c-7411-430b-bdb4-fbf912d785cd"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:30 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "088d819d-a142-42c6-b537-ef8aba3d2989",
+        "x-ms-ratelimit-remaining-subscription-reads": "11905",
+        "x-ms-request-id": "10a3dd9c-965d-456b-bb88-c24ac55792e5",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063031Z:088d819d-a142-42c6-b537-ef8aba3d2989"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c9d90382-1b06-405d-9dc0-9f83c55385bc"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:32 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "7666fe3b-3e4a-49e6-b483-5cd9dc606204",
+        "x-ms-ratelimit-remaining-subscription-reads": "11904",
+        "x-ms-request-id": "b752a131-73a1-4201-9ec0-e6c352139c0e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063033Z:7666fe3b-3e4a-49e6-b483-5cd9dc606204"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "97f60251-85c9-4f66-86b2-f2044e63d4de"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:35 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e37ceb99-c43d-4710-8eb9-e0d6102506e3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11903",
+        "x-ms-request-id": "5bfdb1f1-dc68-424e-825a-322674deb28d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063035Z:e37ceb99-c43d-4710-8eb9-e0d6102506e3"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "72de3502-10aa-4749-8578-e493f9b4eac8"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:38 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "edc2b801-aa47-4ee9-9de6-0ec61d0c88a4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11902",
+        "x-ms-request-id": "4f4b32da-304a-4b49-9479-f006aac30d2c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063039Z:edc2b801-aa47-4ee9-9de6-0ec61d0c88a4"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "InProgress",
+        "startTime": "2022-11-02T06:26:46.3491585Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/providers/Microsoft.ContainerService/locations/eastus/operations/55512e6d-e770-4563-a8bf-25cdbec8bdf3?api-version=2017-08-31",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "73edac7d-ac21-47dd-967c-b06b3affba6b"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:40 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c0d37c66-cfd0-4b27-bd31-7eca6fd7044e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11901",
+        "x-ms-request-id": "730dd565-84ef-43c4-bcea-79860ab58ab9",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063041Z:c0d37c66-cfd0-4b27-bd31-7eca6fd7044e"
+      },
+      "ResponseBody": {
+        "name": "6d2e5155-70e7-6345-a8bf-25cdbec8bdf3",
+        "status": "Succeeded",
+        "startTime": "2022-11-02T06:26:46.3491585Z",
+        "endTime": "2022-11-02T06:30:39.0671949Z"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/myjstest/providers/Microsoft.ContainerService/managedClusters/myreourcexyz?api-version=2022-09-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-containerservice/17.2.0 core-rest-pipeline/1.10.0 Node/v16.17.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "23eed949-7be0-4cd0-be76-ab85f1a0e965"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Date": "Wed, 02 Nov 2022 06:30:42 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "0ec3d6d4-e76a-4754-92d7-d8c2190ea71c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11900",
+        "x-ms-request-id": "40c0c0fb-a022-40b9-8104-b35fc4c54316",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20221102T063043Z:0ec3d6d4-e76a-4754-92d7-d8c2190ea71c"
+      },
+      "ResponseBody": {
+        "id": "/subscriptions/azure_subscription_id/resourcegroups/myjstest/providers/Microsoft.ContainerService/managedClusters/myreourcexyz",
+        "location": "eastus",
+        "name": "myreourcexyz",
+        "type": "Microsoft.ContainerService/ManagedClusters",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "powerState": {
+            "code": "Running"
+          },
+          "kubernetesVersion": "1.23.12",
+          "currentKubernetesVersion": "1.23.12",
+          "dnsPrefix": "aksjssdk",
+          "fqdn": "aksjssdk-419066d9.hcp.eastus.azmk8s.io",
+          "azurePortalFQDN": "aksjssdk-419066d9.portal.hcp.eastus.azmk8s.io",
+          "agentPoolProfiles": [
+            {
+              "name": "aksagent",
+              "count": 1,
+              "vmSize": "Standard_DS2_v2",
+              "osDiskSizeGB": 128,
+              "osDiskType": "Managed",
+              "kubeletDiskType": "OS",
+              "maxPods": 110,
+              "type": "VirtualMachineScaleSets",
+              "maxCount": 100,
+              "minCount": 1,
+              "enableAutoScaling": true,
+              "provisioningState": "Succeeded",
+              "powerState": {
+                "code": "Running"
+              },
+              "orchestratorVersion": "1.23.12",
+              "currentOrchestratorVersion": "1.23.12",
+              "mode": "System",
+              "osType": "Linux",
+              "osSKU": "Ubuntu",
+              "nodeImageVersion": "AKSUbuntu-1804gen2containerd-2022.10.12",
+              "enableFIPS": false
+            }
+          ],
+          "servicePrincipalProfile": {
+            "clientId": "azure_client_id"
+          },
+          "nodeResourceGroup": "MC_myjstest_myreourcexyz_eastus",
+          "enableRBAC": true,
+          "networkProfile": {
+            "networkPlugin": "kubenet",
+            "loadBalancerSku": "Standard",
+            "loadBalancerProfile": {
+              "managedOutboundIPs": {
+                "count": 1
+              },
+              "effectiveOutboundIPs": [
+                {
+                  "id": "/subscriptions/azure_subscription_id/resourceGroups/MC_myjstest_myreourcexyz_eastus/providers/Microsoft.Network/publicIPAddresses/67453f33-87a6-4e42-a097-e8be492f516e"
+                }
+              ]
+            },
+            "podCidr": "10.244.0.0/16",
+            "serviceCidr": "10.0.0.0/16",
+            "dnsServiceIP": "10.0.0.10",
+            "dockerBridgeCidr": "172.17.0.1/16",
+            "outboundType": "loadBalancer",
+            "podCidrs": [
+              "10.244.0.0/16"
+            ],
+            "serviceCidrs": [
+              "10.0.0.0/16"
+            ],
+            "ipFamilies": [
+              "IPv4"
+            ]
+          },
+          "maxAgentPools": 100,
+          "autoScalerProfile": {
+            "balance-similar-node-groups": "false",
+            "expander": "random",
+            "max-empty-bulk-delete": "10",
+            "max-graceful-termination-sec": "600",
+            "max-node-provision-time": "15m",
+            "max-total-unready-percentage": "45",
+            "new-pod-scale-up-delay": "0s",
+            "ok-total-unready-count": "3",
+            "scale-down-delay-after-add": "10m",
+            "scale-down-delay-after-delete": "10s",
+            "scale-down-delay-after-failure": "3m",
+            "scale-down-unneeded-time": "10m",
+            "scale-down-unready-time": "20m",
+            "scale-down-utilization-threshold": "0.5",
+            "scan-interval": "10s",
+            "skip-nodes-with-local-storage": "false",
+            "skip-nodes-with-system-pods": "true"
+          },
+          "securityProfile": {},
+          "storageProfile": {
+            "diskCSIDriver": {
+              "enabled": true
+            },
+            "fileCSIDriver": {
+              "enabled": true
+            },
+            "snapshotController": {
+              "enabled": true
+            }
+          },
+          "oidcIssuerProfile": {
+            "enabled": false
+          }
+        },
+        "sku": {
+          "name": "Basic",
+          "tier": "Free"
+        }
+      }
+    }
+  ],
+  "Variables": {}
+}
