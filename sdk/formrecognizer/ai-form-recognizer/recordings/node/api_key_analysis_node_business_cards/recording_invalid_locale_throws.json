@@ -1,0 +1,42 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://endpoint/formrecognizer/documentModels/prebuilt-businessCard:analyze?locale=thisIsNotAValidLocaleString\u0026api-version=2022-08-31",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Connection": "keep-alive",
+        "Content-Length": "76",
+        "Content-Type": "application/json",
+        "Ocp-Apim-Subscription-Key": "api_key",
+        "User-Agent": "azsdk-js-ai-form-recognizer/4.0.0 core-rest-pipeline/1.9.2 Node/v16.15.1 OS/(x64-Linux-5.18.17-200.fc36.x86_64)",
+        "x-ms-client-request-id": "1e59e1ac-4eba-4402-910f-37fb0fa8d523"
+      },
+      "RequestBody": {
+        "urlSource": "https://storageaccount/testingdata/businessCard.jpg?sastoken"
+      },
+      "StatusCode": 400,
+      "ResponseHeaders": {
+        "apim-request-id": "7d2ae9dc-ee8c-436a-ab3a-a6ba7db57393",
+        "Content-Length": "199",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 25 Aug 2022 16:08:36 GMT",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "x-envoy-upstream-service-time": "625"
+      },
+      "ResponseBody": {
+        "error": {
+          "code": "InvalidArgument",
+          "message": "Invalid argument.",
+          "innererror": {
+            "code": "InvalidParameter",
+            "message": "The parameter Locale is invalid: The language code is invalid or not supported."
+          }
+        }
+      }
+    }
+  ],
+  "Variables": {}
+}
