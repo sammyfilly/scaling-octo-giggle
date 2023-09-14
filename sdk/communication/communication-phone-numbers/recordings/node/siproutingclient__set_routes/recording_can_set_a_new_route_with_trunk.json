@@ -1,0 +1,208 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://endpoint/sip?api-version=2023-04-01-preview",
+      "RequestMethod": "PATCH",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Length": "77",
+        "Content-Type": "application/merge-patch\u002Bjson",
+        "User-Agent": "azsdk-js-communication-phone-numbers/1.3.0-alpha.20230517.1 core-rest-pipeline/1.10.3 Node/v18.13.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "sanitized",
+        "x-ms-content-sha256": "VjpMPL3j0jAdcWQiXFlXbluXAAEdold6RYOQyp3Wndk=",
+        "x-ms-date": "Wed, 17 May 2023 09:26:35 GMT"
+      },
+      "RequestBody": {
+        "trunks": {
+          "test1.jbtestinfra.com": {
+            "sipSignalingPort": 5678,
+            "enabled": true
+          }
+        }
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Accept-Ranges": "bytes",
+        "api-deprecated-versions": "2021-05-01-preview, 2022-09-01-preview, 2023-01-01-preview",
+        "api-supported-versions": "2023-03-01, 2023-04-01-preview",
+        "Connection": "keep-alive",
+        "Content-Length": "498",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 17 May 2023 09:26:36 GMT",
+        "MS-CV": "sxXlt\u002B664UiDr6d4TDva0A.0",
+        "Strict-Transport-Security": "max-age=2592000",
+        "x-azure-ref": "20230517T092635Z-02fqv2pgsp3gp6xpavw24ccces00000000k00000000279z0",
+        "X-Cache": "CONFIG_NOCACHE",
+        "X-Processing-Time": "538ms"
+      },
+      "ResponseBody": {
+        "domains": {
+          "anotherjbdomain.com": {
+            "enabled": true
+          },
+          "jbtestinfra.com": {
+            "enabled": true
+          }
+        },
+        "trunks": {
+          "test1.jbtestinfra.com": {
+            "enabled": true,
+            "sipSignalingPort": 5678
+          }
+        },
+        "routes": [
+          {
+            "description": "myFirstRoute\u0027s description",
+            "name": "myFirstRoute",
+            "numberPattern": "^.*$",
+            "trunks": []
+          },
+          {
+            "description": "ALTERED mySecondRoute\u0027s description",
+            "name": "mySecondRoute",
+            "numberPattern": "^\u002B[1-9][0-9]{3,23}$",
+            "trunks": []
+          },
+          {
+            "description": "desc",
+            "name": "myThirdRoute",
+            "numberPattern": "^\u002B[1-9][0-9]{3,23}$",
+            "trunks": []
+          }
+        ]
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/sip?api-version=2023-04-01-preview",
+      "RequestMethod": "PATCH",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Length": "152",
+        "Content-Type": "application/merge-patch\u002Bjson",
+        "User-Agent": "azsdk-js-communication-phone-numbers/1.3.0-alpha.20230517.1 core-rest-pipeline/1.10.3 Node/v18.13.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "sanitized",
+        "x-ms-content-sha256": "mk5o6E1LjneWeh0fdUltEzwEJXymBc9SAbE96bfvPSk=",
+        "x-ms-date": "Wed, 17 May 2023 09:26:36 GMT"
+      },
+      "RequestBody": {
+        "routes": [
+          {
+            "description": "myFirstRoute\u0027s description",
+            "name": "myFirstRoute",
+            "numberPattern": "^\u002B[1-9][0-9]{3,23}$",
+            "trunks": [
+              "test1.jbtestinfra.com"
+            ]
+          }
+        ]
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Accept-Ranges": "bytes",
+        "api-deprecated-versions": "2021-05-01-preview, 2022-09-01-preview, 2023-01-01-preview",
+        "api-supported-versions": "2023-03-01, 2023-04-01-preview",
+        "Connection": "keep-alive",
+        "Content-Length": "314",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 17 May 2023 09:26:36 GMT",
+        "MS-CV": "D3Re\u002BK9NMUa527EEXpO0rA.0",
+        "Strict-Transport-Security": "max-age=2592000",
+        "x-azure-ref": "20230517T092636Z-02fqv2pgsp3gp6xpavw24ccces00000000k0000000027a3x",
+        "X-Cache": "CONFIG_NOCACHE",
+        "X-Processing-Time": "183ms"
+      },
+      "ResponseBody": {
+        "domains": {
+          "anotherjbdomain.com": {
+            "enabled": true
+          },
+          "jbtestinfra.com": {
+            "enabled": true
+          }
+        },
+        "trunks": {
+          "test1.jbtestinfra.com": {
+            "enabled": true,
+            "sipSignalingPort": 5678
+          }
+        },
+        "routes": [
+          {
+            "description": "myFirstRoute\u0027s description",
+            "name": "myFirstRoute",
+            "numberPattern": "^\u002B[1-9][0-9]{3,23}$",
+            "trunks": [
+              "test1.jbtestinfra.com"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "RequestUri": "https://endpoint/sip?api-version=2023-04-01-preview",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "User-Agent": "azsdk-js-communication-phone-numbers/1.3.0-alpha.20230517.1 core-rest-pipeline/1.10.3 Node/v18.13.0 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "sanitized",
+        "x-ms-content-sha256": "47DEQpj8HBSa\u002B/TImW\u002B5JCeuQeRkm5NMpJWZG3hSuFU=",
+        "x-ms-date": "Wed, 17 May 2023 09:26:36 GMT"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Accept-Ranges": "bytes",
+        "api-deprecated-versions": "2021-05-01-preview, 2022-09-01-preview, 2023-01-01-preview",
+        "api-supported-versions": "2023-03-01, 2023-04-01-preview",
+        "Connection": "keep-alive",
+        "Content-Length": "314",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 17 May 2023 09:26:36 GMT",
+        "MS-CV": "n3O52GdJhEmtJCy/7JY9AQ.0",
+        "Strict-Transport-Security": "max-age=2592000",
+        "x-azure-ref": "20230517T092636Z-02fqv2pgsp3gp6xpavw24ccces00000000k0000000027a64",
+        "X-Cache": "CONFIG_NOCACHE",
+        "X-Processing-Time": "102ms"
+      },
+      "ResponseBody": {
+        "domains": {
+          "anotherjbdomain.com": {
+            "enabled": true
+          },
+          "jbtestinfra.com": {
+            "enabled": true
+          }
+        },
+        "trunks": {
+          "test1.jbtestinfra.com": {
+            "enabled": true,
+            "sipSignalingPort": 5678
+          }
+        },
+        "routes": [
+          {
+            "description": "myFirstRoute\u0027s description",
+            "name": "myFirstRoute",
+            "numberPattern": "^\u002B[1-9][0-9]{3,23}$",
+            "trunks": [
+              "test1.jbtestinfra.com"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "Variables": {
+    "fqdn-1": "test1.jbtestinfra.com",
+    "fqdn-2": "test2.jbtestinfra.com"
+  }
+}
