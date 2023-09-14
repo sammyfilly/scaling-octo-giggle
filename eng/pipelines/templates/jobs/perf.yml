@@ -1,0 +1,71 @@
+parameters:
+- name: OperatingSystems
+  type: string
+  default: 'Linux'
+- name: LanguageVersion
+  type: string
+  default: '18'
+- name: ServiceDirectory
+  type: string
+  default: ''
+- name: PackageVersions
+  type: string
+  default: '.*'
+- name: Tests
+  type: string
+  default: '^.*$'
+- name: TestBuckets
+  type: number
+  default: 0
+- name: Arguments
+  type: string
+  default: '.*'
+- name: Iterations
+  type: number
+  default: '5'
+- name: AdditionalArguments
+  type: string
+  default: ''
+- name: EnvVars
+  type: object
+  default: {}
+
+jobs:
+  - template: /eng/common/pipelines/templates/jobs/archetype-sdk-tests-generate.yml
+    parameters:
+      JobTemplatePath: /eng/common/pipelines/templates/jobs/perf.yml
+      MatrixConfigs:
+        - Name: perf_test_generated
+          Path: eng/pipelines/templates/jobs/perf-matrix-generated.json
+          GenerateVMJobs: true
+          Selection: all
+      PreGenerationSteps:
+        - task: Powershell@2
+          inputs:
+            pwsh: true
+            filePath: eng/scripts/generate-perf-matrix.ps1
+            arguments: >-
+              -BaseMatrix eng/pipelines/templates/jobs/perf-matrix-base.json
+              -OutputMatrix eng/pipelines/templates/jobs/perf-matrix-generated.json
+              -Tests ${{ parameters.Tests }}
+              -TestBuckets ${{ parameters.TestBuckets }}
+          displayName: Generate perf matrix
+      MatrixFilters: []
+      MatrixReplace: []
+      AdditionalParameters:
+        Variables:
+        - template: /eng/pipelines/templates/variables/globals.yml
+        OperatingSystems: ${{ parameters.OperatingSystems }}
+        Language: JS
+        LanguageVersion: ${{ parameters.LanguageVersion }}
+        InstallLanguageSteps:
+        - template: /eng/pipelines/templates/steps/use-node-version.yml
+          parameters:
+            NodeVersion: ${{ parameters.LanguageVersion }}.x
+        ServiceDirectory: ${{ parameters.ServiceDirectory }}
+        PackageVersions: ${{ parameters.PackageVersions }}
+        Tests: ${{ parameters.Tests }}
+        Arguments: ${{ parameters.Arguments }}
+        Iterations: ${{ parameters.Iterations }}
+        AdditionalArguments: ${{ parameters.additionalArguments }}
+        EnvVars: ${{ parameters.EnvVars}}
