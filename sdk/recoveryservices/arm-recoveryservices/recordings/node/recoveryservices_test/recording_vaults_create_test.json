@@ -1,0 +1,66 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/myjstest/providers/Microsoft.RecoveryServices/vaults/myvaultxxx?api-version=2022-04-01",
+      "RequestMethod": "PUT",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Length": "100",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-recoveryservices/5.1.1 core-rest-pipeline/1.10.2 Node/v18.10.0 OS/(x64-Windows_NT-10.0.19042)",
+        "x-ms-client-request-id": "4799e7f2-b38e-4adf-aff4-49a57d2ab485"
+      },
+      "RequestBody": {
+        "location": "eastus",
+        "identity": {
+          "type": "SystemAssigned"
+        },
+        "properties": {},
+        "sku": {
+          "name": "Standard"
+        }
+      },
+      "StatusCode": 201,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "562",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 31 Jan 2023 08:18:56 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-client-request-id": "4799e7f2-b38e-4adf-aff4-49a57d2ab485",
+        "x-ms-correlation-request-id": "fbcc7902-feeb-4fcd-85dc-10260b71ac1c",
+        "x-ms-ratelimit-remaining-subscription-resource-requests": "209",
+        "x-ms-request-id": "fbcc7902-feeb-4fcd-85dc-10260b71ac1c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230131T081857Z:fbcc7902-feeb-4fcd-85dc-10260b71ac1c"
+      },
+      "ResponseBody": {
+        "location": "eastus",
+        "name": "myvaultxxx",
+        "etag": "W/\u0022datetime\u00272023-01-31T08%3A18%3A56.0555653Z\u0027\u0022",
+        "identity": {
+          "tenantId": "88888888-8888-8888-8888-888888888888",
+          "principalId": "54056929-ec59-4d59-9953-de3a6c2048cd",
+          "type": "SystemAssigned"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "privateEndpointStateForBackup": "None",
+          "privateEndpointStateForSiteRecovery": "None"
+        },
+        "id": "/subscriptions/azure_subscription_id/resourceGroups/myjstest/providers/Microsoft.RecoveryServices/vaults/myvaultxxx",
+        "type": "Microsoft.RecoveryServices/vaults",
+        "sku": {
+          "name": "Standard"
+        }
+      }
+    }
+  ],
+  "Variables": {}
+}
