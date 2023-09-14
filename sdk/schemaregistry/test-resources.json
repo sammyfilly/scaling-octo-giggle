@@ -1,0 +1,158 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "baseName": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().name]",
+      "metadata": {
+        "description": "The base resource name."
+      }
+    },
+    "tenantId": {
+      "type": "string",
+      "defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+      "metadata": {
+        "description": "The tenant ID to which the application and resources belong."
+      }
+    },
+    "testApplicationId": {
+      "type": "string",
+      "metadata": {
+        "description": "The application client ID used to run tests."
+      }
+    },
+    "testApplicationSecret": {
+      "type": "string",
+      "metadata": {
+        "description": "The application client secret used to run tests."
+      }
+    },
+    "testApplicationOid": {
+      "type": "string",
+      "defaultValue": "b3653439-8136-4cd5-aac3-2a9460871ca6",
+      "metadata": {
+        "description": "The client OID to grant access to test resources."
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "The location of the resource. By default, this is the same as the resource group."
+      }
+    }
+  },
+  "variables": {
+    "apiVersion": "2018-01-01-preview",
+    "schemaRegistryGroup": "azsdk_js_test_group",
+    "schemaRegistryEndpoint": "[format('https://{0}.servicebus.windows.net', parameters('baseName'))]",
+    "namespaceName": "[parameters('baseName')]",
+    "authorizationName": "[concat(parameters('baseName'), '/RootManageSharedAccessKey')]",
+    "eventHubName": "eventhub",
+    "eventHubNameFull": "[concat(parameters('baseName'), '/eventhub')]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.EventHub/namespaces",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[parameters('baseName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "Standard",
+        "tier": "Standard",
+        "capacity": 5
+      },
+      "properties": {
+        "zoneRedundant": false,
+        "isAutoInflateEnabled": false,
+        "maximumThroughputUnits": 0,
+        "kafkaEnabled": true
+      }
+    },
+    {
+      "type": "Microsoft.EventHub/namespaces/AuthorizationRules",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('authorizationName')]",
+      "location": "[parameters('location')]",
+      "dependsOn": ["[resourceId('Microsoft.EventHub/namespaces', variables('namespaceName'))]"],
+      "properties": {
+        "rights": ["Listen", "Manage", "Send"]
+      }
+    },
+    {
+      "type": "Microsoft.EventHub/namespaces/eventhubs",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[variables('eventHubNameFull')]",
+      "location": "[parameters('location')]",
+      "dependsOn": ["[resourceId('Microsoft.EventHub/namespaces', variables('namespaceName'))]"],
+      "properties": {
+        "messageRetentionInDays": 1,
+        "partitionCount": 4
+      }
+    },
+    {
+      "type": "Microsoft.EventHub/namespaces/networkRuleSets",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[concat(variables('namespaceName'), '/default')]",
+      "location": "[parameters('location')]",
+      "dependsOn": ["[resourceId('Microsoft.EventHub/namespaces', variables('namespaceName'))]"],
+      "properties": {
+        "defaultAction": "Deny",
+        "virtualNetworkRules": [],
+        "ipRules": []
+      }
+    },
+    {
+      "type": "Microsoft.EventHub/namespaces/eventhubs/consumergroups",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[concat(variables('eventHubNameFull'), '/$Default')]",
+      "location": "[parameters('location')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.EventHub/namespaces/eventhubs', variables('namespaceName'), variables('eventHubName'))]",
+        "[resourceId('Microsoft.EventHub/namespaces', variables('namespaceName'))]"
+      ],
+      "properties": {}
+    },
+    {
+      "type": "Microsoft.EventHub/namespaces/schemagroups",
+      "apiVersion": "[variables('apiVersion')]",
+      "name": "[format('{0}/{1}', parameters('baseName'), variables('schemaRegistryGroup'))]",
+      "location": "[parameters('location')]",
+      "dependsOn": ["[resourceId('Microsoft.EventHub/namespaces',parameters('baseName'))]"],
+      "properties": {
+        "schemaType": "avro"
+      }
+    }
+  ],
+  "outputs": {
+    "AZURE_TENANT_ID": {
+      "type": "string",
+      "value": "[parameters('tenantId')]"
+    },
+    "AZURE_CLIENT_ID": {
+      "type": "string",
+      "value": "[parameters('testApplicationId')]"
+    },
+    "AZURE_CLIENT_SECRET": {
+      "type": "string",
+      "value": "[parameters('testApplicationSecret')]"
+    },
+    "SCHEMA_REGISTRY_GROUP": {
+      "type": "string",
+      "value": "[variables('schemaRegistryGroup')]"
+    },
+    "SCHEMA_REGISTRY_ENDPOINT": {
+      "type": "string",
+      "value": "[variables('schemaRegistryEndpoint')]"
+    },
+    "EVENTHUB_CONNECTION_STRING": {
+      "type": "string",
+      "value": "[listKeys(resourceId('Microsoft.EventHub/namespaces/authorizationRules', variables('namespaceName'), 'RootManageSharedAccessKey'), variables('apiVersion')).primaryConnectionString]"
+    },
+    "EVENTHUB_NAME": {
+      "type": "string",
+      "value": "[variables('eventHubName')]"
+    }
+  }
+}
