@@ -1,0 +1,8 @@
+trigger: none
+
+stages:
+  - template: /eng/pipelines/templates/stages/archetype-sdk-tests.yml
+    parameters:
+      PackageName: "@azure/search-documents"
+      ServiceDirectory: search
+      SupportedClouds: 'Public,UsGov,China'
