@@ -1,0 +1,41 @@
+# NOTE: Please refer to https://aka.ms/azsdk/engsys/ci-yaml before editing this file.
+                
+trigger:
+  branches:
+    include:
+      - main
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/cosmosdb/cosmos/
+      - sdk/cosmosdb/ci.yml
+    exclude:
+      - sdk/cosmosdb/ci.mgmt.yml
+      - sdk/cosmosdb/arm-cosmosdb
+pr:
+  branches:
+    include:
+      - main
+      - feature/*
+      - release/*
+      - hotfix/*
+  paths:
+    include:
+      - sdk/cosmosdb/cosmos/
+    exclude:
+      - sdk/cosmosdb/ci.mgmt.yml
+      - sdk/cosmosdb/arm-cosmosdb
+extends:
+  template: ../../eng/pipelines/templates/stages/archetype-sdk-client.yml
+  parameters:
+    ServiceDirectory: cosmosdb
+    RunUnitTests: true
+    PreGenerationSteps:
+      PreSteps:
+        - template: ../../eng/pipelines/templates/steps/cosmos-integration-public.yml
+      PostSteps:
+        - template: ../../eng/pipelines/templates/steps/cosmos-additional-steps.yml
+    Artifacts:
+      - name: azure-cosmos
+        safeName: azurecosmos
