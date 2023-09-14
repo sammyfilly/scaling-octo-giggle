@@ -1,0 +1,50 @@
+{
+ "recordings": [
+  {
+   "method": "POST",
+   "url": "https://endpoint/metricsadvisor/v1.0/enrichment/anomalyDetection/configurations/26ece682-80a6-4415-89a2-05903dd9a640/anomalies/query",
+   "query": {
+    "$maxpagesize": "2"
+   },
+   "requestBody": "{\"startTime\":\"2021-05-05T00:00:00.000Z\",\"endTime\":\"2021-11-01T00:00:00.000Z\"}",
+   "status": 200,
+   "response": "{\"value\":[{\"timestamp\":\"2021-10-31T00:00:00Z\",\"dimension\":{\"region\":\"Istanbul\",\"category\":\"Electronics (Accessories)\"},\"property\":{\"anomalySeverity\":\"Low\",\"value\":0.0,\"expectedValue\":0.2226051564570372}},{\"timestamp\":\"2021-10-31T00:00:00Z\",\"dimension\":{\"region\":\"Tianjin\",\"category\":\"__SUM__\"},\"property\":{\"anomalySeverity\":\"Medium\",\"value\":900770.6000000001,\"expectedValue\":1645160.8108448838}}],\"@nextLink\":\"https://endpoint:443/metricsadvisor/v1.0/enrichment/anomalyDetection/configurations/26ece682-80a6-4415-89a2-05903dd9a640/anomalies/query?$maxpagesize=2&$skip=2\"}",
+   "responseHeaders": {
+    "apim-request-id": "1fb5c07c-64c3-4f8f-8ff2-819e70a99a0c",
+    "content-length": "609",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 08 Nov 2021 09:44:09 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "136",
+    "x-request-id": "1fb5c07c-64c3-4f8f-8ff2-819e70a99a0c"
+   }
+  },
+  {
+   "method": "POST",
+   "url": "https://endpoint:443/metricsadvisor/v1.0/enrichment/anomalyDetection/configurations/26ece682-80a6-4415-89a2-05903dd9a640/anomalies/query",
+   "query": {
+    "$maxpagesize": "2",
+    "$skip": "2"
+   },
+   "requestBody": "{\"startTime\":\"2021-05-05T00:00:00.000Z\",\"endTime\":\"2021-11-01T00:00:00.000Z\"}",
+   "status": 200,
+   "response": "{\"value\":[{\"timestamp\":\"2021-10-31T00:00:00Z\",\"dimension\":{\"region\":\"Tianjin\",\"category\":\"Electronics (Consumer)\"},\"property\":{\"anomalySeverity\":\"Low\",\"value\":8.2,\"expectedValue\":0.2799398290216903}},{\"timestamp\":\"2021-10-31T00:00:00Z\",\"dimension\":{\"region\":\"__SUM__\",\"category\":\"Electronics (Accessories)\"},\"property\":{\"anomalySeverity\":\"Low\",\"value\":12.6,\"expectedValue\":7.66378372884321}}],\"@nextLink\":\"https://endpoint:443/metricsadvisor/v1.0/enrichment/anomalyDetection/configurations/26ece682-80a6-4415-89a2-05903dd9a640/anomalies/query?$maxpagesize=2&$skip=4\"}",
+   "responseHeaders": {
+    "apim-request-id": "69928bf5-63dc-42cf-b899-998d1b431c1f",
+    "content-length": "605",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 08 Nov 2021 09:44:10 GMT",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "139",
+    "x-request-id": "69928bf5-63dc-42cf-b899-998d1b431c1f"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {},
+  "newDate": {}
+ },
+ "hash": "a08da83f2fd9da25224d303f6a30b465"
+}
