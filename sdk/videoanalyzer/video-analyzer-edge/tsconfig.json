@@ -1,0 +1,12 @@
+{
+  "extends": "../../../tsconfig.package",
+  "compilerOptions": {
+    "outDir": "./dist-esm",
+    "declarationDir": "./types",
+    "preserveConstEnums": true,
+    "paths": {
+      "@azure/video-analyzer-edge": ["./src/index"]
+    }
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts", "samples-dev/**/*.ts"]
+}
