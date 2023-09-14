@@ -1,0 +1,30 @@
+{
+ "recordings": [
+  {
+   "method": "PATCH",
+   "url": "https://endpoint/phoneNumbers/%2B14155550100/capabilities",
+   "query": {
+    "api-version": "2022-01-11-preview2"
+   },
+   "requestBody": "{\"calling\":\"none\",\"sms\":\"outbound\"}",
+   "status": 404,
+   "response": "{\"error\":{\"code\":\"InternalError\",\"message\":\"The server encountered an internal error.\"}}",
+   "responseHeaders": {
+    "api-supported-versions": "2021-03-07, 2022-01-11-preview2",
+    "content-type": "application/json",
+    "date": "Wed, 02 Mar 2022 21:21:20 GMT",
+    "ms-cv": "NmUxgorH4kKvQBhSUnv+gg.0",
+    "request-context": "appId=",
+    "strict-transport-security": "max-age=2592000",
+    "x-azure-ref": "0z98fYgAAAACF9ft+bFd0SIleMtngLZthTEFYMzExMDAwMTA4MDMzADlmYzdiNTE5LWE4Y2MtNGY4OS05MzVlLWM5MTQ4YWUwOWU4MQ==",
+    "x-cache": "CONFIG_NOCACHE",
+    "x-processing-time": "316ms"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {},
+  "newDate": {}
+ },
+ "hash": "94c6d18150d845a6914ed056b481f079"
+}
