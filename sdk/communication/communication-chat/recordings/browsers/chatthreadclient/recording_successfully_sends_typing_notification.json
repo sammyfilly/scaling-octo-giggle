@@ -1,0 +1,22 @@
+{
+ "recordings": [
+  {
+   "method": "POST",
+   "url": "https://endpoint/chat/threads/19%3AVtO5uCbcebTvbGm71-4-9IcOk7oHVE6U1kAdJqE6Hro1%40thread.v2/typing",
+   "query": {
+    "api-version": "2021-09-07"
+   },
+   "requestBody": "{}",
+   "status": 200,
+   "response": "",
+   "responseHeaders": {
+    "content-length": "0"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {},
+  "newDate": {}
+ },
+ "hash": "553a1731ebfead784aae39462c686a05"
+}
