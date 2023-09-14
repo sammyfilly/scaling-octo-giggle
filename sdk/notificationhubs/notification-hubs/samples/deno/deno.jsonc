@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "importMap": "import_map.json",
+  "lint": {
+    "files": {
+      "include": ["."]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["."]
+    },
+    "options": {
+      "useTabs": false,
+      "singleQuote": false,
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "proseWrap": "preserve"
+    }
+  },
+  "tasks": {
+    "sample": "deno run --allow-env --allow-read --allow-sys --allow-net "
+  }
+}
