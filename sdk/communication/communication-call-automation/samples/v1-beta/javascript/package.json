@@ -1,0 +1,31 @@
+{
+  "name": "@azure-samples/communication-call-automation-js-beta",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Azure Communication Services - Call Automation client library samples for JavaScript (Beta)",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azure/azure-sdk-for-js.git",
+    "directory": "sdk/communication/communication-call-automation"
+  },
+  "keywords": [
+    "azure",
+    "cloud",
+    "Azure",
+    "communication",
+    "callautomation"
+  ],
+  "author": "Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azure/azure-sdk-for-js/issues"
+  },
+  "homepage": "https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/communication/communication-call-automation",
+  "dependencies": {
+    "@azure/communication-call-automation": "next",
+    "dotenv": "latest"
+  }
+}
