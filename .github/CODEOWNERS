@@ -1,0 +1,158 @@
+# Instructions for CODEOWNERS file format and automatic build failure notifications:
+# https://github.com/Azure/azure-sdk/blob/main/docs/policies/opensource.md#codeowners
+
+###########
+# SDK
+###########
+
+# Catch all
+/sdk/ @ramya-rao-a
+
+# PRLabel: %Azure.Core
+/sdk/core/ @xirzec @chradek @jeremymeng @deyaaeldeen
+
+# PRLabel: %Azure.Core
+/sdk/core/core-amqp/ @chradek @richardpark-msft @HarshaNalluru
+
+# PRLabel: %Azure.Core
+/sdk/core/core-auth/ @sadasant @xirzec @jeremymeng @deyaaeldeen
+
+# PRLabel: %Azure.Core
+/sdk/core/core-client-rest/ @xirzec @chradek @joheredi @jeremymeng @deyaaeldeen
+
+# PRLabel: %Azure.Core
+/sdk/core/core-tracing/ @xirzec @chradek @richardpark-msft @maorleger
+
+# Service teams
+# PRLabel: %App Configuration
+/sdk/appconfiguration/ @richardpark-msft @chradek @HarshaNalluru
+
+# PRLabel: %Attestation
+/sdk/attestation/ @LarryOsterman @deyaaeldeen
+
+# PRLabel: %Batch
+/sdk/batch/ @dpwatrous @paterasMSFT @zfengms @deyaaeldeen
+
+# PRLabel: %Communication
+/sdk/communication/ @DominikMe @0rland0Wats0n @ankitarorabit @Azure/azure-sdk-communication-code-reviewers
+/sdk/communication/communication-identity/ @petrsvihlik @martinbarnas-ms
+
+# PRLabel: %Container Registry
+/sdk/containerregistry/ @jeremymeng
+
+# PRLabel: %Cosmos
+/sdk/cosmosdb/ @southpolesteve @zfoster
+
+# PRLabel: %Digital Twins
+/sdk/digitaltwins/ @vishnureddy17
+
+# PRLabel: %Event Grid
+/sdk/eventgrid/ @xirzec @ellismg
+
+# PRLabel: %Event Hubs
+/sdk/eventhub/ @chradek @richardpark-msft @HarshaNalluru
+
+# PRLabel: %Azure.Identity
+/sdk/identity/ @sadasant @witemple-msft @schaabs
+
+# PRLabel: %Iot
+/sdk/iot/ @YoDaMa @xirzec
+
+# PRLabel: %KeyVault
+/sdk/keyvault/ @maorleger @sadasant 
+
+# PRLabel: %Service Bus
+/sdk/servicebus/ @chradek @richardpark-msft @HarshaNalluru
+
+# PRLabel: %Storage
+/sdk/storage/ @XiaoningLiu @jeremymeng @vinjiang @jiacfan @ljian3377 @EmmaZhu
+
+# PRLabel: %Synapse
+/sdk/synapse/ @joheredi
+
+# PRLabel: %Tables
+/sdk/tables/ @joheredi
+
+# PRLabel: %Purview
+/sdk/purview/ @joheredi
+
+# PRLabel: %Farmbeats
+/sdk/agrifood/ @joheredi
+
+# PRLabel: %ConfidentialLedger
+/sdk/confidentialledger/ @joheredi
+
+# PRLabel: %DocumentTranslator
+/sdk/documenttranslator/ @joheredi
+
+# PRLabel: %WebPubSub
+/sdk/web-pubsub/ @xirzec @bterlson @vicancy
+
+# PRLabel: %EngSys
+/sdk/template/ @Azure/azure-sdk-eng
+
+/sdk/test-utils/ @HarshaNalluru @sadasant
+
+# PRLabel: %Cognitive - Text Analytics
+/sdk/textanalytics/ @deyaaeldeen @witemple-msft
+
+# PRLabel: %Schema Registry
+/sdk/schemaregistry/ @deyaaeldeen
+
+# PRLabel: %Cognitive - Form Recognizer
+/sdk/formrecognizer/ @jeremymeng @witemple-msft
+
+# PRLabel: %Cognitive - Metrics Advisor
+/sdk/metricsadvisor/ @jeremymeng @KarishmaGhiya
+
+# PRLabel: %Search
+/sdk/search/ @xirzec @sarangan12
+
+/sdk/applicationinsights/applicationinsights-query/ @divyajay @alongafni
+/sdk/operationalinsights/loganalytics/ @divyajay @alongafni
+
+/sdk/cognitiveservices/cognitiveservices-qnamaker-runtime/ @bingisbestest @nerajput1607
+/sdk/cognitiveservices/cognitiveservices-qnamaker/ @bingisbestest @nerajput1607
+
+# Smoke Tests
+/common/smoke-test/ @ramya-rao-a @chradek @jonathandturner @sadasant @jeremymeng @southpolesteve
+
+# API review files
+/sdk/**/review/*api.md @bterlson @xirzec @chradek
+
+# Management Plane
+# PRLabel: %Mgmt
+/sdk/**/arm-*/ @qiaozha @dw511214992
+
+# PRLabel: %Monitor
+/sdk/monitor/ @hectorhdzg @applicationinsights-js-owners @richardpark-msft
+/sdk/monitor/monitor-query @KarishmaGhiya @maorleger @richardpark-msft
+
+###########
+# Tools
+###########
+
+# PRLabel: %dev-tool
+/common/tools/dev-tool/ @witemple-msft
+
+###########
+# Eng Sys
+###########
+/eng/   @weshaggard @praveenkuttappan @mikeharder @danieljurek
+/**/tests.yml   @benbp
+/**/ci.yml      @praveenkuttappan
+
+###########
+# Config
+###########
+/.vscode/ @mikeharder @praveenkuttappan @deyaaeldeen
+/common/ @mikeharder @praveenkuttappan @witemple-msft @deyaaeldeen
+/common/smoke-test @mikeharder @praveenkuttappan @witemple-msft @deyaaeldeen @benbp
+
+/rush.json @mikeharder @praveenkuttappan
+/tsconfig.json @mikeharder @praveenkuttappan @witemple-msft @deyaaeldeen
+/**/tsconfig.json @witemple-msft @deyaaeldeen
+/.scripts/ @mikeharder @praveenkuttappan @KarishmaGhiya
+
+# Add owners for notifications for specific pipelines
+/eng/pipelines/aggregate-reports.yml         @ramya-rao-a
