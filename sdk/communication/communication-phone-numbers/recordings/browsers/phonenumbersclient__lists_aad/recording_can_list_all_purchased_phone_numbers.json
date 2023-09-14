@@ -1,0 +1,54 @@
+{
+ "recordings": [
+  {
+   "method": "POST",
+   "url": "https://endpoint/SomeTenantId/oauth2/v2.0/token",
+   "query": {},
+   "requestBody": "response_type=token&grant_type=client_credentials&client_id=SomeClientId&client_secret=azure_client_secret&scope=https%3A%2F%2Fsanitized%2F",
+   "status": 200,
+   "response": "{\"token_type\":\"Bearer\",\"expires_in\":3599,\"ext_expires_in\":3599,\"access_token\":\"access_token\"}",
+   "responseHeaders": {
+    "cache-control": "no-store, no-cache",
+    "content-length": "1336",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 12 May 2022 16:07:29 GMT",
+    "expires": "-1",
+    "p3p": "CP=\"DSP CUR OTPi IND OTRi ONL FIN\"",
+    "pragma": "no-cache",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "x-content-type-options": "nosniff",
+    "x-ms-ests-server": "2.1.12818.0 - DMS PPE",
+    "x-ms-request-id": "sanitized",
+    "x-xss-protection": "0"
+   }
+  },
+  {
+   "method": "GET",
+   "url": "https://endpoint/phoneNumbers",
+   "query": {
+    "api-version": "2022-06-01-preview",
+    "skip": "0",
+    "top": "100"
+   },
+   "requestBody": null,
+   "status": 200,
+   "response": "{\"phoneNumbers\":[{\"id\":\"14155550100\",\"phoneNumber\":\"+14155550100\",\"countryCode\":\"US\",\"phoneNumberType\":\"geographic\",\"capabilities\":{\"calling\":\"outbound\",\"sms\":\"none\"},\"assignmentType\":\"application\",\"purchaseDate\":\"2022-03-14T18:26:44.3415816+00:00\",\"cost\":{\"amount\":1.0,\"currencyCode\":\"USD\",\"billingFrequency\":\"monthly\"},\"operatorId\":\"sanitized\",\"operatorName\":\"Microsoft PPE (Dogfood)\",\"phoneNumberSource\":\"cloud\"},{\"id\":\"14155550100\",\"phoneNumber\":\"+14155550100\",\"countryCode\":\"US\",\"phoneNumberType\":\"geographic\",\"capabilities\":{\"calling\":\"inbound+outbound\",\"sms\":\"none\"},\"assignmentType\":\"application\",\"purchaseDate\":\"2022-03-14T19:15:38.2651776+00:00\",\"cost\":{\"amount\":1.0,\"currencyCode\":\"USD\",\"billingFrequency\":\"monthly\"},\"operatorId\":\"sanitized\",\"operatorName\":\"???\",\"phoneNumberSource\":\"cloud\"}]}",
+   "responseHeaders": {
+    "api-supported-versions": "2021-03-07, 2022-01-11-preview2, 2022-06-01-preview",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Thu, 12 May 2022 16:07:30 GMT",
+    "ms-cv": "4sNoaZuD9kC7LUPd6Fz5uQ.0",
+    "strict-transport-security": "max-age=2592000",
+    "x-azure-ref": "0wTB9YgAAAABB6FBB6FdSQKHulmiAhAJAUFJHMDFFREdFMDcxOQBjYzkyNzU4ZC0wNWY3LTRhZDYtYWE1ZS0wZmE5NzE4ZDg5ODU=",
+    "x-cache": "CONFIG_NOCACHE",
+    "x-processing-time": "1216ms"
+   }
+  }
+ ],
+ "uniqueTestInfo": {
+  "uniqueName": {},
+  "newDate": {}
+ },
+ "hash": "eca17e433a83b791fc096978816d8e48"
+}
