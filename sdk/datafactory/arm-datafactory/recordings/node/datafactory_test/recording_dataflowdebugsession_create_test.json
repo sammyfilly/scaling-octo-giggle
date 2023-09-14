@@ -1,0 +1,2795 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/createDataFlowDebugSession?api-version=2018-06-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Length": "229",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7d1d595b-fe55-4a07-8991-928bb21a4726"
+      },
+      "RequestBody": {
+        "timeToLive": 60,
+        "integrationRuntime": {
+          "name": "ir1",
+          "properties": {
+            "type": "Managed",
+            "typeProperties": {
+              "computeProperties": {
+                "location": "AutoResolve",
+                "dataFlowProperties": {
+                  "computeType": "General",
+                  "coreCount": 48,
+                  "timeToLive": 10
+                }
+              }
+            }
+          }
+        }
+      },
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "57",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:20 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "732c0ff6-a06c-4e73-8e39-8a235caef847",
+        "x-ms-ratelimit-remaining-subscription-writes": "1199",
+        "x-ms-request-id": "732c0ff6-a06c-4e73-8e39-8a235caef847",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103221Z:732c0ff6-a06c-4e73-8e39-8a235caef847"
+      },
+      "ResponseBody": {
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b"
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "72e3c702-f5b6-491a-8359-f0e657b5f6ee"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:21 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c9f17a9e-cb5f-44ae-bbec-5c0ed9ba48cf",
+        "x-ms-ratelimit-remaining-subscription-reads": "11997",
+        "x-ms-request-id": "c9f17a9e-cb5f-44ae-bbec-5c0ed9ba48cf",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103221Z:c9f17a9e-cb5f-44ae-bbec-5c0ed9ba48cf"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "172a45e8-faea-44e7-905d-8cc717cce43b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:21 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6c7882e3-4907-4164-a9cb-ddb20870a847",
+        "x-ms-ratelimit-remaining-subscription-reads": "11996",
+        "x-ms-request-id": "6c7882e3-4907-4164-a9cb-ddb20870a847",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103222Z:6c7882e3-4907-4164-a9cb-ddb20870a847"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "cdbb6245-3e57-4286-9644-d4bcd1295d64"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:24 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f52ebe26-630a-4731-9108-0c9409009978",
+        "x-ms-ratelimit-remaining-subscription-reads": "11995",
+        "x-ms-request-id": "f52ebe26-630a-4731-9108-0c9409009978",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103224Z:f52ebe26-630a-4731-9108-0c9409009978"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "517072e4-6530-44b8-ae87-5db14fb732eb"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:26 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a6d6b68a-3f0f-4155-84e6-a2632b3935d2",
+        "x-ms-ratelimit-remaining-subscription-reads": "11994",
+        "x-ms-request-id": "a6d6b68a-3f0f-4155-84e6-a2632b3935d2",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103227Z:a6d6b68a-3f0f-4155-84e6-a2632b3935d2"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d6039a43-cab6-43fa-806f-3b45811dfbcb"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:29 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "64e03ffd-08b5-4dbe-b167-d165b9c1ff92",
+        "x-ms-ratelimit-remaining-subscription-reads": "11993",
+        "x-ms-request-id": "64e03ffd-08b5-4dbe-b167-d165b9c1ff92",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103230Z:64e03ffd-08b5-4dbe-b167-d165b9c1ff92"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "0d73f404-5918-4330-ae56-4921cc9cf0ee"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:32 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "94120433-f10b-4ef8-bd72-8d298bd034cd",
+        "x-ms-ratelimit-remaining-subscription-reads": "11992",
+        "x-ms-request-id": "94120433-f10b-4ef8-bd72-8d298bd034cd",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103232Z:94120433-f10b-4ef8-bd72-8d298bd034cd"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4e1e25dd-a1f2-4c72-9225-e0aa20a98240"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:34 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "64fc3d2c-f0fc-4323-8af6-f1e1f363ce84",
+        "x-ms-ratelimit-remaining-subscription-reads": "11991",
+        "x-ms-request-id": "64fc3d2c-f0fc-4323-8af6-f1e1f363ce84",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103235Z:64fc3d2c-f0fc-4323-8af6-f1e1f363ce84"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a4d3917d-8f9c-4209-b132-aa366760daa1"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:37 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d3fe1dec-318e-4c72-a9b8-cb53651df173",
+        "x-ms-ratelimit-remaining-subscription-reads": "11990",
+        "x-ms-request-id": "d3fe1dec-318e-4c72-a9b8-cb53651df173",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103237Z:d3fe1dec-318e-4c72-a9b8-cb53651df173"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ec37a616-5738-4e91-819a-b7006791b551"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:39 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "fe9dcc60-05a2-44bb-9ca8-7dc25db60763",
+        "x-ms-ratelimit-remaining-subscription-reads": "11989",
+        "x-ms-request-id": "fe9dcc60-05a2-44bb-9ca8-7dc25db60763",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103240Z:fe9dcc60-05a2-44bb-9ca8-7dc25db60763"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d7cb23dd-8805-4eab-ac72-5e343fb436da"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:42 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "36943e39-241e-4643-b7cd-d0a735e148c4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11988",
+        "x-ms-request-id": "36943e39-241e-4643-b7cd-d0a735e148c4",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103242Z:36943e39-241e-4643-b7cd-d0a735e148c4"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b478c00b-d905-41b8-acfd-216e787c21d2"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:44 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cad2a09b-ca82-4f36-be64-c80fcb97f809",
+        "x-ms-ratelimit-remaining-subscription-reads": "11987",
+        "x-ms-request-id": "cad2a09b-ca82-4f36-be64-c80fcb97f809",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103245Z:cad2a09b-ca82-4f36-be64-c80fcb97f809"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7b1e1a97-d270-43ae-9ef8-13d5c1034394"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:47 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "da9b322d-52a7-4414-9c1a-67419cb964fa",
+        "x-ms-ratelimit-remaining-subscription-reads": "11986",
+        "x-ms-request-id": "da9b322d-52a7-4414-9c1a-67419cb964fa",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103248Z:da9b322d-52a7-4414-9c1a-67419cb964fa"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d8b09500-58c6-4ff2-adbc-1a8835a08453"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:50 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2efddbfb-b9b4-440e-93e1-02662cc3c16b",
+        "x-ms-ratelimit-remaining-subscription-reads": "11985",
+        "x-ms-request-id": "2efddbfb-b9b4-440e-93e1-02662cc3c16b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103250Z:2efddbfb-b9b4-440e-93e1-02662cc3c16b"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b948345f-b44e-45e3-af41-45cc3432e644"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:52 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8bf2026f-dc5c-414c-8977-275793735913",
+        "x-ms-ratelimit-remaining-subscription-reads": "11984",
+        "x-ms-request-id": "8bf2026f-dc5c-414c-8977-275793735913",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103253Z:8bf2026f-dc5c-414c-8977-275793735913"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "e37b9a69-adaa-485e-becd-1c44f0cc0c7d"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:55 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "c63c6de8-dd18-4052-a7cc-58c98e437efc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11983",
+        "x-ms-request-id": "c63c6de8-dd18-4052-a7cc-58c98e437efc",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103256Z:c63c6de8-dd18-4052-a7cc-58c98e437efc"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a2f43110-2767-4a28-b0b7-f2f5510dcb99"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:32:57 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6f03e1f8-9aa6-49e8-b0f1-08e1d253a5b7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11982",
+        "x-ms-request-id": "6f03e1f8-9aa6-49e8-b0f1-08e1d253a5b7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103258Z:6f03e1f8-9aa6-49e8-b0f1-08e1d253a5b7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "fe214529-c8b0-40b0-8645-0b5e4ef08ec8"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:01 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "02a57599-ca90-464a-b36d-4112591219bc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11981",
+        "x-ms-request-id": "02a57599-ca90-464a-b36d-4112591219bc",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103301Z:02a57599-ca90-464a-b36d-4112591219bc"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7b77e342-5a8a-4ad7-b201-a215c52eab0b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:03 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9335ba81-4512-4542-9757-86043b5317c7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11980",
+        "x-ms-request-id": "9335ba81-4512-4542-9757-86043b5317c7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103303Z:9335ba81-4512-4542-9757-86043b5317c7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "e7627828-40d6-4cdc-99af-3d969ad5f195"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:06 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cadff26f-f0d0-4df3-a2a9-cc5ecf8c36f5",
+        "x-ms-ratelimit-remaining-subscription-reads": "11979",
+        "x-ms-request-id": "cadff26f-f0d0-4df3-a2a9-cc5ecf8c36f5",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103306Z:cadff26f-f0d0-4df3-a2a9-cc5ecf8c36f5"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "64263d89-2b12-4303-b66c-d00b573ed389"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:08 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8ce97b2f-6b05-4eaa-8a52-ebb6dbf26af3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11978",
+        "x-ms-request-id": "8ce97b2f-6b05-4eaa-8a52-ebb6dbf26af3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103309Z:8ce97b2f-6b05-4eaa-8a52-ebb6dbf26af3"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "86b3842e-67c8-4fd0-aa43-188658e8aacc"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:12 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "688d04cb-7ad2-45f2-a6fa-7d74278e1ded",
+        "x-ms-ratelimit-remaining-subscription-reads": "11977",
+        "x-ms-request-id": "688d04cb-7ad2-45f2-a6fa-7d74278e1ded",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103312Z:688d04cb-7ad2-45f2-a6fa-7d74278e1ded"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7afb3b3b-5a47-4328-b94e-b71979dd35c9"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:14 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d4c5b45f-1859-4f46-8990-55829f02e60d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11976",
+        "x-ms-request-id": "d4c5b45f-1859-4f46-8990-55829f02e60d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103314Z:d4c5b45f-1859-4f46-8990-55829f02e60d"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6204e63e-f3bb-412e-b844-070edd6c3025"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:17 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "043d5046-7f4b-40f2-a066-79b2c34bfc79",
+        "x-ms-ratelimit-remaining-subscription-reads": "11975",
+        "x-ms-request-id": "043d5046-7f4b-40f2-a066-79b2c34bfc79",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103317Z:043d5046-7f4b-40f2-a066-79b2c34bfc79"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a9617d9e-991b-4c98-a542-ea612c2247d3"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:19 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3567b51c-6695-4001-b52c-4973e627606d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11974",
+        "x-ms-request-id": "3567b51c-6695-4001-b52c-4973e627606d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103319Z:3567b51c-6695-4001-b52c-4973e627606d"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f46d6937-930b-4b58-b4a7-b6d310009fbf"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:22 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f9f1b2ee-3615-495b-aa20-b33f91078bac",
+        "x-ms-ratelimit-remaining-subscription-reads": "11973",
+        "x-ms-request-id": "f9f1b2ee-3615-495b-aa20-b33f91078bac",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103322Z:f9f1b2ee-3615-495b-aa20-b33f91078bac"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4448d18d-3745-4679-b560-a080c9b53d0a"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:24 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4742f0db-f481-4800-b6f8-a9f3b833e0ec",
+        "x-ms-ratelimit-remaining-subscription-reads": "11972",
+        "x-ms-request-id": "4742f0db-f481-4800-b6f8-a9f3b833e0ec",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103325Z:4742f0db-f481-4800-b6f8-a9f3b833e0ec"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "db237309-e603-402c-a868-0eefc01462ab"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:27 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9a20e166-bb7c-49d9-b442-2c7069805ec2",
+        "x-ms-ratelimit-remaining-subscription-reads": "11971",
+        "x-ms-request-id": "9a20e166-bb7c-49d9-b442-2c7069805ec2",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103327Z:9a20e166-bb7c-49d9-b442-2c7069805ec2"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d4e06977-22d9-4f38-810b-0b1015dfb6a6"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:30 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "7c300e2c-e281-417e-9abf-cb856cedc88e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11970",
+        "x-ms-request-id": "7c300e2c-e281-417e-9abf-cb856cedc88e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103330Z:7c300e2c-e281-417e-9abf-cb856cedc88e"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "2845ee6b-29df-401b-b4ee-f71f33c24173"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:32 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "89c95e68-34fc-44c8-ba61-954aa20729d7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11969",
+        "x-ms-request-id": "89c95e68-34fc-44c8-ba61-954aa20729d7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103332Z:89c95e68-34fc-44c8-ba61-954aa20729d7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4bda5b00-1319-4595-b2e7-cd1b10674587"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:35 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8491c155-198e-4603-bb38-dc52ab56ef8c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11968",
+        "x-ms-request-id": "8491c155-198e-4603-bb38-dc52ab56ef8c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103335Z:8491c155-198e-4603-bb38-dc52ab56ef8c"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7c11b9fe-a82b-43b0-843c-5aed3d0ed332"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:37 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b019b395-6863-4f57-ac42-3d756d82ad5c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11967",
+        "x-ms-request-id": "b019b395-6863-4f57-ac42-3d756d82ad5c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103338Z:b019b395-6863-4f57-ac42-3d756d82ad5c"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "55b13b59-79c5-41e3-8630-38736545acbb"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:40 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "7ca97c42-d714-4be4-831a-fee6b1382600",
+        "x-ms-ratelimit-remaining-subscription-reads": "11966",
+        "x-ms-request-id": "7ca97c42-d714-4be4-831a-fee6b1382600",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103340Z:7ca97c42-d714-4be4-831a-fee6b1382600"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "e633c951-b0d6-49e4-9e24-4a398e59af66"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:42 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a07e8434-ab2f-4a95-92b9-db6c368118d7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11965",
+        "x-ms-request-id": "a07e8434-ab2f-4a95-92b9-db6c368118d7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103343Z:a07e8434-ab2f-4a95-92b9-db6c368118d7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "565cd48b-adbb-4a71-b75f-a9392b7b32f6"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:45 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "9f44e43a-ab07-4083-8710-7e623c64dbe8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11964",
+        "x-ms-request-id": "9f44e43a-ab07-4083-8710-7e623c64dbe8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103345Z:9f44e43a-ab07-4083-8710-7e623c64dbe8"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "fbe4d1fc-6fb1-4f9e-96d7-862b561250e4"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:47 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e63a648d-b849-4c37-81ae-cacc8d93b9b8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11963",
+        "x-ms-request-id": "e63a648d-b849-4c37-81ae-cacc8d93b9b8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103348Z:e63a648d-b849-4c37-81ae-cacc8d93b9b8"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "bc4156cd-2021-41a3-9196-baf0b634603b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:50 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "fae06672-c256-4fee-b701-a127bd374e6c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11962",
+        "x-ms-request-id": "fae06672-c256-4fee-b701-a127bd374e6c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103351Z:fae06672-c256-4fee-b701-a127bd374e6c"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "79e54d63-51fb-4e4c-a8cd-120639128f8a"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:53 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "359ea2db-f105-45cf-84c6-c464f986c0aa",
+        "x-ms-ratelimit-remaining-subscription-reads": "11961",
+        "x-ms-request-id": "359ea2db-f105-45cf-84c6-c464f986c0aa",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103353Z:359ea2db-f105-45cf-84c6-c464f986c0aa"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "016f5724-4cdf-402a-895f-e2619f8216f0"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:55 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "03d8d70b-e4fe-412a-93c3-51769ccb59cf",
+        "x-ms-ratelimit-remaining-subscription-reads": "11960",
+        "x-ms-request-id": "03d8d70b-e4fe-412a-93c3-51769ccb59cf",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103356Z:03d8d70b-e4fe-412a-93c3-51769ccb59cf"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "7f7bbb45-7e52-4cc8-be39-4833c0d0b66e"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:33:58 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f4166834-e46f-48ef-89e2-e8eb87a0c7bc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11959",
+        "x-ms-request-id": "f4166834-e46f-48ef-89e2-e8eb87a0c7bc",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103358Z:f4166834-e46f-48ef-89e2-e8eb87a0c7bc"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b8ad7ccf-259b-452b-be07-d3270fd3390c"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:00 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4596ce78-a81a-4601-99cd-71924a2c4938",
+        "x-ms-ratelimit-remaining-subscription-reads": "11958",
+        "x-ms-request-id": "4596ce78-a81a-4601-99cd-71924a2c4938",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103401Z:4596ce78-a81a-4601-99cd-71924a2c4938"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "aa05ca41-cdf8-40de-874c-da4aee9e5043"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:03 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f02b47e3-2e8b-4d27-9433-8238895dbda4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11957",
+        "x-ms-request-id": "f02b47e3-2e8b-4d27-9433-8238895dbda4",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103403Z:f02b47e3-2e8b-4d27-9433-8238895dbda4"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "93c2aa75-028a-4f63-b957-2537eaf8525c"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:05 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4cf34d27-158a-450c-a11a-d3e67d7f97eb",
+        "x-ms-ratelimit-remaining-subscription-reads": "11956",
+        "x-ms-request-id": "4cf34d27-158a-450c-a11a-d3e67d7f97eb",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103406Z:4cf34d27-158a-450c-a11a-d3e67d7f97eb"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "3037f480-2902-406d-a302-10df11b60b28"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:08 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "fc611ec5-9507-4aa4-9785-fbd5a1144883",
+        "x-ms-ratelimit-remaining-subscription-reads": "11955",
+        "x-ms-request-id": "fc611ec5-9507-4aa4-9785-fbd5a1144883",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103409Z:fc611ec5-9507-4aa4-9785-fbd5a1144883"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4dadb4c5-ecec-4f1a-ba2c-858a41b51c74"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:10 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "69ab7632-09c4-49f2-8efc-6fdb5124c322",
+        "x-ms-ratelimit-remaining-subscription-reads": "11954",
+        "x-ms-request-id": "69ab7632-09c4-49f2-8efc-6fdb5124c322",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103411Z:69ab7632-09c4-49f2-8efc-6fdb5124c322"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "53ad94f1-2fca-4b74-b8d5-0b4a3a1fb8eb"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:13 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "46e9bcec-ec56-445d-81a8-4870a8598eb7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11953",
+        "x-ms-request-id": "46e9bcec-ec56-445d-81a8-4870a8598eb7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103414Z:46e9bcec-ec56-445d-81a8-4870a8598eb7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d9c90e08-71b5-4b9f-9f8d-da3a6cb1ce91"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:15 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "cc80b675-195f-4e86-b0f8-47c2e8a03680",
+        "x-ms-ratelimit-remaining-subscription-reads": "11952",
+        "x-ms-request-id": "cc80b675-195f-4e86-b0f8-47c2e8a03680",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103416Z:cc80b675-195f-4e86-b0f8-47c2e8a03680"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "6c132290-7184-47da-8eef-cdee06d169c4"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:18 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "38e177c6-23b2-4cc6-9398-161f1c8fd7ad",
+        "x-ms-ratelimit-remaining-subscription-reads": "11951",
+        "x-ms-request-id": "38e177c6-23b2-4cc6-9398-161f1c8fd7ad",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103419Z:38e177c6-23b2-4cc6-9398-161f1c8fd7ad"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "8238d128-bf5f-49ba-9fdf-c050c926725d"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:21 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "55a36556-a55d-43ad-b0bc-93b3b2eeb380",
+        "x-ms-ratelimit-remaining-subscription-reads": "11950",
+        "x-ms-request-id": "55a36556-a55d-43ad-b0bc-93b3b2eeb380",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103421Z:55a36556-a55d-43ad-b0bc-93b3b2eeb380"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "e577beb7-d654-4d96-a8e7-fc941d4a23f4"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:23 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "71a465a7-1eb0-42b9-80f7-90d7633c781c",
+        "x-ms-ratelimit-remaining-subscription-reads": "11949",
+        "x-ms-request-id": "71a465a7-1eb0-42b9-80f7-90d7633c781c",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103424Z:71a465a7-1eb0-42b9-80f7-90d7633c781c"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "4c16b966-7bc0-4274-9940-10b8bbf4be7c"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:26 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "bdc0d096-951d-4212-8823-fdbdee2f2f6e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11948",
+        "x-ms-request-id": "bdc0d096-951d-4212-8823-fdbdee2f2f6e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103427Z:bdc0d096-951d-4212-8823-fdbdee2f2f6e"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "839941a3-edf4-40fe-bb8d-aa0742b369a6"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:28 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2dcc8960-d3a1-486a-a835-d0d6aec8fb4a",
+        "x-ms-ratelimit-remaining-subscription-reads": "11947",
+        "x-ms-request-id": "2dcc8960-d3a1-486a-a835-d0d6aec8fb4a",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103429Z:2dcc8960-d3a1-486a-a835-d0d6aec8fb4a"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f67301f9-fad7-4d1e-9552-71077cbd90ed"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:32 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "3ad34b26-99e9-41eb-aa9c-41a9f2cb3a33",
+        "x-ms-ratelimit-remaining-subscription-reads": "11946",
+        "x-ms-request-id": "3ad34b26-99e9-41eb-aa9c-41a9f2cb3a33",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103432Z:3ad34b26-99e9-41eb-aa9c-41a9f2cb3a33"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "745bcafb-4e18-492c-a62a-4c990f39b2ec"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:34 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "239cc466-64b6-491f-bb31-bfdfd71074d3",
+        "x-ms-ratelimit-remaining-subscription-reads": "11945",
+        "x-ms-request-id": "239cc466-64b6-491f-bb31-bfdfd71074d3",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103434Z:239cc466-64b6-491f-bb31-bfdfd71074d3"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a3084d96-875c-42f2-aa05-6471b00e668e"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:37 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "a062c723-5c08-4862-b8e8-6be1a957f6dc",
+        "x-ms-ratelimit-remaining-subscription-reads": "11944",
+        "x-ms-request-id": "a062c723-5c08-4862-b8e8-6be1a957f6dc",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103437Z:a062c723-5c08-4862-b8e8-6be1a957f6dc"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "24ce8ff7-d0ec-46b9-9631-a1a1489d2bae"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:39 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "edfb158d-9e98-4141-b5ce-fac72fd72587",
+        "x-ms-ratelimit-remaining-subscription-reads": "11943",
+        "x-ms-request-id": "edfb158d-9e98-4141-b5ce-fac72fd72587",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103439Z:edfb158d-9e98-4141-b5ce-fac72fd72587"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d51f9e8e-0cb3-47a7-9119-e614790b477d"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:42 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "39446431-c762-41eb-b891-c156d0827318",
+        "x-ms-ratelimit-remaining-subscription-reads": "11942",
+        "x-ms-request-id": "39446431-c762-41eb-b891-c156d0827318",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103442Z:39446431-c762-41eb-b891-c156d0827318"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "43723a6f-bede-40b2-b6b8-143ef4253cd3"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:44 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "f2886b52-ea88-451c-9064-33d940e27bd1",
+        "x-ms-ratelimit-remaining-subscription-reads": "11941",
+        "x-ms-request-id": "f2886b52-ea88-451c-9064-33d940e27bd1",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103445Z:f2886b52-ea88-451c-9064-33d940e27bd1"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "9ce99af4-b796-4626-b326-e6125a0f3caf"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:47 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "01055868-0bd7-422d-8466-e7ed8a00070d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11940",
+        "x-ms-request-id": "01055868-0bd7-422d-8466-e7ed8a00070d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103447Z:01055868-0bd7-422d-8466-e7ed8a00070d"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "5c5f1398-8df8-41a7-9133-a0f44b361dda"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:50 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "ccd35915-9961-4799-aba3-eac027b0157f",
+        "x-ms-ratelimit-remaining-subscription-reads": "11939",
+        "x-ms-request-id": "ccd35915-9961-4799-aba3-eac027b0157f",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103450Z:ccd35915-9961-4799-aba3-eac027b0157f"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "a7991eae-d2d3-498a-aa5d-9a004df5350b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:52 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "80562967-e1c8-419b-b08b-e76871d597c7",
+        "x-ms-ratelimit-remaining-subscription-reads": "11938",
+        "x-ms-request-id": "80562967-e1c8-419b-b08b-e76871d597c7",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103452Z:80562967-e1c8-419b-b08b-e76871d597c7"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "edc9cae6-0315-46fc-9dd6-15d9f2f93c6f"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:55 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "6e1dc770-0dc8-46af-8943-42486aa1309d",
+        "x-ms-ratelimit-remaining-subscription-reads": "11937",
+        "x-ms-request-id": "6e1dc770-0dc8-46af-8943-42486aa1309d",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103455Z:6e1dc770-0dc8-46af-8943-42486aa1309d"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "f70b2658-0021-44ce-8ebd-eeb638663727"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:34:57 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "abdcb07c-ff15-438d-9018-0452541f1a26",
+        "x-ms-ratelimit-remaining-subscription-reads": "11936",
+        "x-ms-request-id": "abdcb07c-ff15-438d-9018-0452541f1a26",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103457Z:abdcb07c-ff15-438d-9018-0452541f1a26"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "d1d0fb49-409f-4ed1-b5cb-76efac324d6a"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:00 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "2a69f0bc-f4e0-4c75-b5e7-48687ee279d0",
+        "x-ms-ratelimit-remaining-subscription-reads": "11935",
+        "x-ms-request-id": "2a69f0bc-f4e0-4c75-b5e7-48687ee279d0",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103500Z:2a69f0bc-f4e0-4c75-b5e7-48687ee279d0"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "03793d76-1548-4dce-a0ed-3db427e52911"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:02 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "d9cf649c-f0ac-4374-9d17-600adfde3879",
+        "x-ms-ratelimit-remaining-subscription-reads": "11934",
+        "x-ms-request-id": "d9cf649c-f0ac-4374-9d17-600adfde3879",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103503Z:d9cf649c-f0ac-4374-9d17-600adfde3879"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "b87a3d71-7e5d-49fb-aec5-9445aca159d4"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:05 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "62e29101-a632-403d-87c4-a7d8fcb123be",
+        "x-ms-ratelimit-remaining-subscription-reads": "11933",
+        "x-ms-request-id": "62e29101-a632-403d-87c4-a7d8fcb123be",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103506Z:62e29101-a632-403d-87c4-a7d8fcb123be"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "ddc4b62c-806b-4a55-bbf0-3a3fcfec2d7b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:09 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "8818c5fc-2bd0-48cc-bb01-b75aeeba16ab",
+        "x-ms-ratelimit-remaining-subscription-reads": "11932",
+        "x-ms-request-id": "8818c5fc-2bd0-48cc-bb01-b75aeeba16ab",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103510Z:8818c5fc-2bd0-48cc-bb01-b75aeeba16ab"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "8e0dd519-d272-43d8-b80c-253f0d3d2949"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:12 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "e6040cfe-3fc0-4fbb-a32b-8285ca039fe8",
+        "x-ms-ratelimit-remaining-subscription-reads": "11931",
+        "x-ms-request-id": "e6040cfe-3fc0-4fbb-a32b-8285ca039fe8",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103513Z:e6040cfe-3fc0-4fbb-a32b-8285ca039fe8"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "bb53d4e7-7ccd-40b4-95c6-1a3caeb2e016"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:15 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "621c6287-061a-48c9-bdb1-62407b5fee2e",
+        "x-ms-ratelimit-remaining-subscription-reads": "11930",
+        "x-ms-request-id": "621c6287-061a-48c9-bdb1-62407b5fee2e",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103516Z:621c6287-061a-48c9-bdb1-62407b5fee2e"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "76bfb1f3-459c-4b58-bce5-5d753bbbb06e"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:18 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "b1439a2c-f530-478c-9f13-a6c438d6de56",
+        "x-ms-ratelimit-remaining-subscription-reads": "11929",
+        "x-ms-request-id": "b1439a2c-f530-478c-9f13-a6c438d6de56",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103519Z:b1439a2c-f530-478c-9f13-a6c438d6de56"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "62d48be6-ec14-4cc3-98fd-15b5c55a97b7"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:21 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "11dfcd05-0fc0-410a-9785-a4577a51fcb9",
+        "x-ms-ratelimit-remaining-subscription-reads": "11928",
+        "x-ms-request-id": "11dfcd05-0fc0-410a-9785-a4577a51fcb9",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103521Z:11dfcd05-0fc0-410a-9785-a4577a51fcb9"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "96c667c8-8d65-43ec-94a5-20e94a252f18"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:23 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "317bbed4-fccc-4f99-a0ef-9309f681e647",
+        "x-ms-ratelimit-remaining-subscription-reads": "11927",
+        "x-ms-request-id": "317bbed4-fccc-4f99-a0ef-9309f681e647",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103524Z:317bbed4-fccc-4f99-a0ef-9309f681e647"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "779321a3-19d3-4282-86cd-90b2cd1a08e3"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:26 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "4cfb188f-e993-4f88-ae2c-718bf7e6c9d4",
+        "x-ms-ratelimit-remaining-subscription-reads": "11926",
+        "x-ms-request-id": "4cfb188f-e993-4f88-ae2c-718bf7e6c9d4",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103526Z:4cfb188f-e993-4f88-ae2c-718bf7e6c9d4"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "c08b9c13-9251-400d-bdf8-4a63f29118e7"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:28 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "71ab6afe-f8d3-4a81-a08f-7b10481e937a",
+        "x-ms-ratelimit-remaining-subscription-reads": "11925",
+        "x-ms-request-id": "71ab6afe-f8d3-4a81-a08f-7b10481e937a",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103529Z:71ab6afe-f8d3-4a81-a08f-7b10481e937a"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "9bbaec49-450a-40b4-8e65-7a021d987b48"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:31 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "72f23a87-a30c-4e7a-a11a-2eddb540802b",
+        "x-ms-ratelimit-remaining-subscription-reads": "11924",
+        "x-ms-request-id": "72f23a87-a30c-4e7a-a11a-2eddb540802b",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103532Z:72f23a87-a30c-4e7a-a11a-2eddb540802b"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "26da5a54-d82f-497b-8551-e5c9c2722f7b"
+      },
+      "RequestBody": null,
+      "StatusCode": 202,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Length": "102",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:34 GMT",
+        "Expires": "-1",
+        "Location": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "7c13dc18-c824-4465-9115-f6bf10b1be42",
+        "x-ms-ratelimit-remaining-subscription-reads": "11923",
+        "x-ms-request-id": "7c13dc18-c824-4465-9115-f6bf10b1be42",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103534Z:7c13dc18-c824-4465-9115-f6bf10b1be42"
+      },
+      "ResponseBody": {
+        "status": "Pending",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": true
+      }
+    },
+    {
+      "RequestUri": "https://management.azure.com/subscriptions/azure_subscription_id/resourceGroups/marytest/providers/Microsoft.DataFactory/factories/examplefactorytest/operationResults/dfCreateSession$$2abd70ee-c318-4251-8a07-4f619ddce49b?api-version=2018-06-01",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Accept": "application/json",
+        "Accept-Encoding": "gzip,deflate",
+        "Authorization": "Sanitized",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "User-Agent": "azsdk-js-arm-datafactory/11.0.0 core-rest-pipeline/1.10.3 Node/v18.12.1 OS/(x64-Windows_NT-10.0.22621)",
+        "x-ms-client-request-id": "449e8196-d811-4513-ba8f-66f4ee7f5f8b"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Cache-Control": "no-cache",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Tue, 14 Mar 2023 10:35:36 GMT",
+        "Expires": "-1",
+        "Pragma": "no-cache",
+        "Server": "Kestrel",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "x-ms-correlation-request-id": "0d965143-4ff1-4557-86cf-f9e07ab50879",
+        "x-ms-ratelimit-remaining-subscription-reads": "11922",
+        "x-ms-request-id": "0d965143-4ff1-4557-86cf-f9e07ab50879",
+        "x-ms-routing-request-id": "SOUTHEASTASIA:20230314T103537Z:0d965143-4ff1-4557-86cf-f9e07ab50879"
+      },
+      "ResponseBody": {
+        "status": "Succeeded",
+        "sessionId": "2abd70ee-c318-4251-8a07-4f619ddce49b",
+        "inProgress": false
+      }
+    }
+  ],
+  "Variables": {}
+}
